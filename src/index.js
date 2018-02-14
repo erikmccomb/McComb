@@ -1,20 +1,23 @@
+// Required by React
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { 
-  BrowserRouter as Router, 
-  Route,
-} from 'react-router-dom';
-import './index.css';
-import App from './components/App';
+import { BrowserRouter } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
+
+// Styling covering the entire app
+import './css/index.css';
+
+// Components
+import App from './components/App';
+
 
 const Root = () => {
   return (
-    <Router>
-      <div>
-        <Route exactly pattern="/" component={App}/>
-      </div>
-    </Router>
+    <div >
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </div>
   )
 }
 
