@@ -1,6 +1,7 @@
 // Required by React
   import React from 'react';
   import { 
+    BrowserRouter as Router,
     Route,  
     Switch 
   } from 'react-router-dom';
@@ -23,10 +24,12 @@ const PageLayoutRoute = ({ component: Component, ...rest }) => {
 class App extends React.Component {
   render(){
     return (
-      <Switch>
-        <PageLayoutRoute exact path='/' component={Mccomb} />
-        <PageLayoutRoute component={NoMatch} />
-      </Switch>
+      <Router>
+        <Switch>
+          <PageLayoutRoute exact path='/' component={Mccomb} />
+          <PageLayoutRoute component={NoMatch} />
+        </Switch>
+      </Router>
     )
   }
 }
