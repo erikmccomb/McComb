@@ -1,5 +1,6 @@
 // Required by React
 import React from 'react';
+import { Link } from 'react-router-dom'
 // Pre-styled Components
   import { Dropdown, Menu, Icon } from 'semantic-ui-react';
   import 'semantic-ui-css/semantic.min.css';
@@ -15,17 +16,41 @@ class Footer extends React.Component {
     return (
       <Menu inverted size='mini' style={{ borderRadius: '0px', height: '5vh',}}>
         <div style={styles.buttonRow}>
+
           <div style={styles.button}>
-            <Icon name='github' size='big' />
+            <a href="http://github.com/erikmccomb" 
+              target="_blank" 
+              style={{color: '#fefcfb'}}
+            >
+              <Icon name='github' size='big' />
+            </a>
           </div>
+
           <div style={styles.button}>
-            <Icon name='twitter' size='big' />
+            <a href="https://www.linkedin.com/in/erikmccomb/" 
+              target="_blank" 
+              style={{color: '#fefcfb'}}
+            >
+              <Icon name='linkedin' size='big' />
+            </a>
           </div>
+
           <div style={styles.button}>
-            <Icon name='linkedin' size='big' />
+            <a href="https://twitter.com/Erik_the_Mick" 
+              target="_blank" 
+              style={{color: '#fefcfb'}}
+            >
+              <Icon name='twitter' size='big' />
+            </a>
           </div>
+
           <div style={styles.button}>
-            <Icon name='instagram' size='big' />
+            <a href="http://www.instagram.com/itserikwith_a_k/" 
+              target="_blank" 
+              style={{color: '#fefcfb'}}
+            >
+              <Icon name='instagram' size='big' />
+            </a>
           </div>
         </div>
       </Menu>
@@ -39,15 +64,12 @@ const styles = {
     flexDirection: 'row', 
     alignItems: 'center', 
     margin: 'auto',
-    width: '80vw',
   },
   button: {
     display: 'flex', 
     alignItems: 'center',
     justifyContent: 'center',
-    paddingLeft: '10px',
-    paddingRight: '10px',
-    width: '20vw',
+    width: '15vw',
   }
 }
 
