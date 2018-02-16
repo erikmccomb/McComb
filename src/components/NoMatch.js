@@ -1,7 +1,6 @@
 // Required by React
   import React, { Component } from 'react';
   import { Link } from 'react-router-dom';
-  import { height } from 'window-size';
   import lost from '../images/lost.jpg';
 
 class NoMatch extends Component {

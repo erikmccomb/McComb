@@ -1,14 +1,14 @@
 import React from 'react';
 import '../css/App.css';
 
-class Mccomb extends React.Component {
+class Contact extends React.Component {
   render(){
     return (
       <div style={{fontFamily: 'monofur'}}>
-        <p>Mccomb Component</p>
+        <p>Contact Component</p>
       </div>
     )
   }
 }
 
-export default Mccomb;
+export default Contact;

@@ -4,19 +4,19 @@
   import registerServiceWorker from './registerServiceWorker';
 // Styling covering the entire app
   import {injectGlobal} from 'styled-components';
-  import './css/index.css';
+  import './index.css';
 // Components
   import App from './components/App';
 
 injectGlobal `
+
   body{
     min-height: 100%;
     margin:0px;
     padding: 0px;
-    font-family: helvetica neue, helvetica, arial, sansSerif;
-    background-color: #e1e6e7;
-    font-weight: 300;
-  }
+    background-color: #fefcfb;
+    font-family: 'monofur';
+  },
 `
 
 const Root = () => {

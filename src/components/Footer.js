@@ -1,8 +1,7 @@
 // Required by React
-import React from 'react';
-import { Link } from 'react-router-dom'
+  import React from 'react';
 // Pre-styled Components
-  import { Dropdown, Menu, Icon } from 'semantic-ui-react';
+  import { Menu, Icon } from 'semantic-ui-react';
   import 'semantic-ui-css/semantic.min.css';
 
 
@@ -14,44 +13,68 @@ class Footer extends React.Component {
   render() {
     const { activeItem } = this.state
     return (
-      <Menu inverted size='mini' style={{ borderRadius: '0px', height: '5vh',}}>
+      <Menu 
+        borderless 
+        size='mini' 
+        style={{ 
+          borderRadius: '0px', 
+          height: '5vh', 
+          borderTop: '1px solid #054a91',
+        }}
+      >
         <div style={styles.buttonRow}>
 
-          <div style={styles.button}>
+          <Menu.Item 
+            style={styles.button} 
+            name='Github' 
+            active={activeItem === 'Github'}
+          >
             <a href="http://github.com/erikmccomb" 
-              target="_blank" 
-              style={{color: '#fefcfb'}}
+              target="_blank"
+              rel="noopener noreferrer" 
             >
-              <Icon name='github' size='big' />
+              <Icon name='github' size='big' style={styles.icon} />
             </a>
-          </div>
+          </Menu.Item>
 
-          <div style={styles.button}>
+          <Menu.Item 
+            style={styles.button}
+            name='Linkedin' 
+            active={activeItem === 'Linkedin'}
+          >
             <a href="https://www.linkedin.com/in/erikmccomb/" 
               target="_blank" 
-              style={{color: '#fefcfb'}}
+              rel="noopener noreferrer"
             >
-              <Icon name='linkedin' size='big' />
+              <Icon name='linkedin' size='big' style={styles.icon} />
             </a>
-          </div>
+          </Menu.Item>
 
-          <div style={styles.button}>
+          <Menu.Item 
+            style={styles.button}
+            name='Twitter' 
+            active={activeItem === 'Twitter'}
+          >
             <a href="https://twitter.com/Erik_the_Mick" 
               target="_blank" 
-              style={{color: '#fefcfb'}}
+              rel="noopener noreferrer"
             >
-              <Icon name='twitter' size='big' />
+              <Icon name='twitter' size='big' style={styles.icon} />
             </a>
-          </div>
+          </Menu.Item>
 
-          <div style={styles.button}>
+          <Menu.Item 
+            style={styles.button}
+            name='Instagram' 
+            active={activeItem === 'Instagram'}
+          >
             <a href="http://www.instagram.com/itserikwith_a_k/" 
               target="_blank" 
-              style={{color: '#fefcfb'}}
+              rel="noopener noreferrer"
             >
-              <Icon name='instagram' size='big' />
+              <Icon name='instagram' size='big' style={styles.icon} />
             </a>
-          </div>
+          </Menu.Item>
         </div>
       </Menu>
     )
@@ -64,12 +87,16 @@ const styles = {
     flexDirection: 'row', 
     alignItems: 'center', 
     margin: 'auto',
+    
   },
   button: {
     display: 'flex', 
     alignItems: 'center',
     justifyContent: 'center',
     width: '15vw',
+  },
+  icon: {
+    color: '#054a91'
   }
 }
 
