@@ -21,7 +21,9 @@ injectGlobal `
 
 const Root = () => {
   return (
-    <App />
+    <div style={{height: '100vh'}}>
+      <App />
+    </div>
   )
 }
 

@@ -7,7 +7,7 @@ class Mccomb extends React.Component {
       <div style={styles.flexContainer}>
         <div style={styles.box}>
           <div style={styles.title}>
-            Mccomb
+            Mccomb   
           </div>
           <div style={styles.subRow}>
             <div style={styles.subtitle}>
@@ -54,10 +54,11 @@ const styles = {
     justifyContent: 'center',
     textAlign: 'center',
     fontFamily: 'Hughs',
-    width: '50%',
+    width: '50vw',
   },
   subtitle: {
-    padding: '0vw 4vw 0vw 4vw'
+    padding: '0vw 4vw 0vw 4vw',
+    textAlign: 'center',
   },
   subRow: {
     display: 'flex', 

@@ -38,6 +38,7 @@ const styles = {
     backgroundImage: `url(${lost})`,
     backgroundSize: 'cover',
     overflow: 'hidden',
+    height: '90vh'
   },
   box: {
     flexDirection: 'column',

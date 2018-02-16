@@ -67,14 +67,13 @@ class NavBar extends React.Component {
 const styles = {
   menuButton: {
     color: '#054a91',
+    backgroundColor: '#fefcfb',
   },
   menuStyle: {
     borderRadius: '0px', 
     backgroundColor: '#fefcfb',
     borderBottom: '1px solid #058ed9',
-    fontFamily: 'monofur',
-    fontSize: '14px',
-    minHeight: '40px',
+    fontFamily: 'Hughs',
   }
 }
 

@@ -35,14 +35,14 @@
 
 const PageLayout = ({children, ...rest}) => {
   return (
-    <div >
-      <div style={{minHeight: '40px'}}>
+    <div style={{display: 'flex', flexDirection: 'column'}}>
+      <div>
         <NavBar />
       </div>
-      <div style={{minHeight: '89.6vh',backgroundColor: '#222222'}}>
+      <div style={{ backgroundColor: '#222222',}}>
         {children}
       </div>
-      <div style={{minHeight: '40px'}}>
+      <div>
         <StickyFoot>
           <Footer/>
         </StickyFoot>
