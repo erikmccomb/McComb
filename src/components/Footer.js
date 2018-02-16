@@ -18,7 +18,8 @@ class Footer extends React.Component {
         size='mini' 
         style={{ 
           borderRadius: '0px', 
-          height: '5vh', 
+          height: '5vh',
+          minHeight: '40px',
           borderTop: '1px solid #054a91',
         }}
       >

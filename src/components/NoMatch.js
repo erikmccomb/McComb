@@ -35,7 +35,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    minHeight: '95vh',
+    minHeight: '90vh',
     backgroundImage: `url(${lost})`,
     backgroundSize: 'cover',
     overflow: 'hidden',

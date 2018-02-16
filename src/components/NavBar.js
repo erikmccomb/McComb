@@ -36,29 +36,26 @@ class NavBar extends React.Component {
           </Menu.Item>
         </Link>
 
-        <Menu.Menu 
-          position='right' 
-          style={styles.menuButton}
-        >
-          <Dropdown 
-            item text='+ More' 
-            style={styles.menuButton}
-          >
+        <Menu.Menu position='right' style={styles.menuButton}>
+          <Dropdown item text='+ More' style={styles.menuButton}>
             <Dropdown.Menu>
+
               <Dropdown.Item>
-              <Link style={{color: 'white'}} to='/Resume'>
-                <div style={styles.menuButton}> 
-                  Resume
-                </div>
-              </Link>
+                <Link to='/Resume'>
+                  <div style={styles.menuButton}> 
+                    Resume
+                  </div>
+                </Link>
               </Dropdown.Item>
+
               <Dropdown.Item>
-                <Link style={{color: 'white'}} to='/Contact'>
+                <Link to='/Contact'>
                   <div style={styles.menuButton}>
                     Contact Me!
                   </div>
                 </Link>
               </Dropdown.Item>
+              
             </Dropdown.Menu>
           </Dropdown>
         </Menu.Menu>
@@ -75,9 +72,10 @@ const styles = {
     borderRadius: '0px', 
     height: '5vh', 
     backgroundColor: '#fefcfb',
-    borderBottom: '1px solid #054a91',
+    borderBottom: '1px solid #058ed9',
     fontFamily: 'monofur',
-    fontSize: '12px',
+    fontSize: '14px',
+    minHeight: '40px',
   }
 }
 

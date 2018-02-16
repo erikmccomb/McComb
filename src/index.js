@@ -9,13 +9,13 @@
   import App from './components/App';
 
 injectGlobal `
-
   body{
     min-height: 100%;
     margin:0px;
     padding: 0px;
     background-color: #fefcfb;
     font-family: 'monofur';
+    color: #fefcfb;
   },
 `
 

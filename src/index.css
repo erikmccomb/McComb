@@ -9,3 +9,23 @@ body {
   font-family: 'Monofur';
   src: local('Monofur'), url(./fonts/monofur.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Muscat';
+  src: local('Muscat'), url(./fonts/Muscat.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Jasmine_and_Greentea';
+  src: local('Jasmine_and_Greentea'), url(./fonts/Jasmine_and_Greentea.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Avocado_and_Lime';
+  src: local('Avocado_and_Lime'), url(./fonts/Avocado_and_Lime.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Hughs';
+  src: local('Hughs'), url(./fonts/Hughs.otf) format('opentype');
+}

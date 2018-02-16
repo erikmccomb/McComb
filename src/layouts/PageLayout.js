@@ -12,6 +12,7 @@
     left: "0",
     bottom: "0",
     height: "5vh",
+    minHeight: '40px',
     width: "100%"
   };
   
@@ -35,13 +36,13 @@
 const PageLayout = ({children, ...rest}) => {
   return (
     <div >
-      <div style={{height: '5vh'}}>
+      <div style={{height: '5vh', minHeight: '40px'}}>
         <NavBar />
       </div>
-      <div style={{height: '90vh'}}>
+      <div style={{height: '90vh', backgroundColor: '#222222'}}>
         {children}
       </div>
-      <div style={{height: '5vh'}}>
+      <div style={{height: '5vh', minHeight: '40px'}}>
         <StickyFoot>
           <Footer/>
         </StickyFoot>
