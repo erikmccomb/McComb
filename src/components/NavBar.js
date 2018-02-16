@@ -70,7 +70,6 @@ const styles = {
   },
   menuStyle: {
     borderRadius: '0px', 
-    height: '5vh', 
     backgroundColor: '#fefcfb',
     borderBottom: '1px solid #058ed9',
     fontFamily: 'monofur',

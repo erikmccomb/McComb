@@ -19,7 +19,6 @@ const styles = {
   flexContainer: {
     display: 'flex',
     justifyContent: 'center',
-    minHeight: '90vh',
     overflow: 'hidden',
   },
   box: {

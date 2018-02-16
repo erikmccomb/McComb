@@ -9,14 +9,14 @@ class Mccomb extends React.Component {
           <div style={styles.title}>
             Mccomb
           </div>
-          <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', overflow: 'hidden', fontFamily: 'Muscat', fontSize: 'calc(15px + 2vw)', lineHeight: 'calc(15px + 2vw)'}}>
-            <div style={{padding: '0vw 4vw 0vw 4vw'}}>
+          <div style={styles.subRow}>
+            <div style={styles.subtitle}>
               Web Design
             </div>
-            <div style={{padding: '0vw 4vw 0vw 4vw'}}>
+            <div style={styles.subtitle}>
               Graphic Design
             </div>
-            <div style={{padding: '0vw 4vw 0vw 4vw'}}>
+            <div style={styles.subtitle}>
               Junior Developer
             </div>
           </div>
@@ -30,7 +30,6 @@ const styles = {
   flexContainer: {
     display: 'flex',
     justifyContent: 'center',
-    minHeight: '90vh',
     overflow: 'hidden',
   },
   box: {
@@ -56,6 +55,18 @@ const styles = {
     textAlign: 'center',
     fontFamily: 'Hughs',
     width: '50%',
+  },
+  subtitle: {
+    padding: '0vw 4vw 0vw 4vw'
+  },
+  subRow: {
+    display: 'flex', 
+    flexDirection: 'row', 
+    justifyContent: 'space-around', 
+    overflow: 'hidden', 
+    fontFamily: 'Muscat', 
+    fontSize: 'calc(15px + 2vw)', 
+    lineHeight: 'calc(15px + 2vw)'
   },
 }
 

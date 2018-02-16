@@ -18,7 +18,6 @@ class Footer extends React.Component {
         size='mini' 
         style={{ 
           borderRadius: '0px', 
-          height: '5vh',
           minHeight: '40px',
           borderTop: '1px solid #054a91',
         }}
@@ -88,7 +87,6 @@ const styles = {
     flexDirection: 'row', 
     alignItems: 'center', 
     margin: 'auto',
-    
   },
   button: {
     display: 'flex', 
