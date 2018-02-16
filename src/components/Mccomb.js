@@ -9,7 +9,7 @@ class Mccomb extends React.Component {
           <div style={styles.title}>
             Mccomb
           </div>
-          <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', overflow: 'hidden', fontFamily: 'Muscat', fontSize: '3vw', lineHeight: '3vw'}}>
+          <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', overflow: 'hidden', fontFamily: 'Muscat', fontSize: 'calc(15px + 2vw)', lineHeight: 'calc(15px + 2vw)'}}>
             <div style={{padding: '0vw 4vw 0vw 4vw'}}>
               Web Design
             </div>
