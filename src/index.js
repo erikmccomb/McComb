@@ -13,8 +13,7 @@ injectGlobal `
     min-height: 100%;
     margin:0px;
     padding: 0px;
-    background-color: #fefcfb;
-    font-family: 'monofur';
+    background-color: #2b2c28;
     color: #fefcfb;
   },
 `

@@ -6,6 +6,21 @@ body {
 }
 
 @font-face {
+  font-family: 'Calendas_Plus';
+  src: local('Calendas_Plus'), url(./fonts/Calendas_Plus.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'FuturaPTBook';
+  src: local('FuturaPTBook'), url(./fonts/FuturaPTBook.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'FuturaPTLightOblique';
+  src: local('FuturaPTLightOblique'), url(./fonts/FuturaPTLightOblique.otf) format('truetype');
+}
+
+@font-face {
   font-family: 'Monofur';
   src: local('Monofur'), url(./fonts/monofur.ttf) format('truetype');
 }

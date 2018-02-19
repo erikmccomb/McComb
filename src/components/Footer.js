@@ -6,76 +6,32 @@
 
 
 class Footer extends React.Component {
-  //Handles the active page indicator
-  state = { activeItem: 'home' }
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
   render() {
-    const { activeItem } = this.state
     return (
-      <Menu 
-        borderless 
-        size='mini' 
-        style={{ 
-          borderRadius: '0px', 
-          minHeight: '40px',
-          borderTop: '1px solid #054a91',
-        }}
-      >
-        <div style={styles.buttonRow}>
+      <Menu borderless size='mini' style={styles.buttonRow}>
+        <Menu.Item style={styles.button} name='Github' >
+          <a href="http://github.com/erikmccomb" target="_blank" rel="noopener noreferrer" >
+            <Icon name='github' size='big' style={styles.icon} />
+          </a>
+        </Menu.Item>
 
-          <Menu.Item 
-            style={styles.button} 
-            name='Github' 
-            active={activeItem === 'Github'}
-          >
-            <a href="http://github.com/erikmccomb" 
-              target="_blank"
-              rel="noopener noreferrer" 
-            >
-              <Icon name='github' size='big' style={styles.icon} />
-            </a>
-          </Menu.Item>
+        <Menu.Item style={styles.button} name='Linkedin' >
+          <a href="https://www.linkedin.com/in/erikmccomb/" target="_blank" rel="noopener noreferrer">
+            <Icon name='linkedin' size='big' style={styles.icon} />
+          </a>
+        </Menu.Item>
 
-          <Menu.Item 
-            style={styles.button}
-            name='Linkedin' 
-            active={activeItem === 'Linkedin'}
-          >
-            <a href="https://www.linkedin.com/in/erikmccomb/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <Icon name='linkedin' size='big' style={styles.icon} />
-            </a>
-          </Menu.Item>
+        <Menu.Item style={styles.button} name='Twitter' >
+          <a href="https://twitter.com/Erik_the_Mick" target="_blank" rel="noopener noreferrer">
+            <Icon name='twitter' size='big' style={styles.icon} />
+          </a>
+        </Menu.Item>
 
-          <Menu.Item 
-            style={styles.button}
-            name='Twitter' 
-            active={activeItem === 'Twitter'}
-          >
-            <a href="https://twitter.com/Erik_the_Mick" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <Icon name='twitter' size='big' style={styles.icon} />
-            </a>
-          </Menu.Item>
-
-          <Menu.Item 
-            style={styles.button}
-            name='Instagram' 
-            active={activeItem === 'Instagram'}
-          >
-            <a href="http://www.instagram.com/itserikwith_a_k/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <Icon name='instagram' size='big' style={styles.icon} />
-            </a>
-          </Menu.Item>
-        </div>
+        <Menu.Item style={styles.button} name='Instagram'>
+          <a href="http://www.instagram.com/itserikwith_a_k/" target="_blank" rel="noopener noreferrer">
+            <Icon name='instagram' size='big' style={styles.icon} />
+          </a>
+        </Menu.Item>
       </Menu>
     )
   }
@@ -87,6 +43,16 @@ const styles = {
     flexDirection: 'row', 
     alignItems: 'center', 
     margin: 'auto',
+    backgroundColor: '#131515',
+    borderRadius: '0px',
+    borderTop: '1px solid #339989',
+    justifyContent: 'center',
+  },
+  buttonBox:{
+    display: 'flex', 
+    flexDirection: 'row', 
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   button: {
     display: 'flex', 
@@ -95,7 +61,7 @@ const styles = {
     width: '15vw',
   },
   icon: {
-    color: '#054a91'
+    color: '#339989'
   }
 }
 

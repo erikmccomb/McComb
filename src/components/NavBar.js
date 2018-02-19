@@ -13,7 +13,7 @@ class NavBar extends React.Component {
   render() {
     const { activeItem } = this.state
     return (
-      <Menu size='mini' borderless style={styles.menuStyle} >
+      <Menu  borderless style={styles.menuStyle} >
         <Link style={{color: 'white'}} to='/McComb'>
           <Menu.Item 
             name='Mccomb' 
@@ -66,14 +66,14 @@ class NavBar extends React.Component {
 
 const styles = {
   menuButton: {
-    color: '#054a91',
-    backgroundColor: '#fefcfb',
+    color: '#339989',
   },
   menuStyle: {
     borderRadius: '0px', 
-    backgroundColor: '#fefcfb',
-    borderBottom: '1px solid #058ed9',
-    fontFamily: 'Hughs',
+    backgroundColor: '#131515',
+    borderBottom: '1px solid #339989',
+    fontFamily: 'FuturaPTLightOblique',
+    width: '100vw',
   }
 }
 

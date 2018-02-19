@@ -4,7 +4,7 @@ import '../css/App.css';
 class Resume extends React.Component {
   render(){
     return (
-      <div style={{fontFamily: 'monofur'}}>
+      <div style={{fontFamily: 'FuturaPTBook'}}>
         <div style={styles.flexContainer}>
           <div style={styles.box}>
             <h1>Resume Component</h1>
@@ -19,7 +19,6 @@ const styles = {
   flexContainer: {
     display: 'flex',
     justifyContent: 'center',
-    minHeight: '90vh',
     overflow: 'hidden',
   },
   box: {

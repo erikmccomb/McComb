@@ -4,7 +4,7 @@ import '../css/App.css';
 class Portfolio extends React.Component {
   render(){
     return (
-      <div style={{fontFamily: 'monofur'}}>
+      <div style={{fontFamily: 'FuturaPTBook'}}>
         <div style={styles.flexContainer}>
           <div style={styles.box}>
             <h1>Portfolio Component</h1>

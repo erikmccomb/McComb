@@ -3,22 +3,22 @@
 //Components
   import NavBar from '../components/NavBar';
   import Footer from '../components/Footer';
+  import Flexbox from 'flexbox-react';
 
 // Sticky Footer
   const footerStyle = {
-    color: "white",
+    backgroundColor: "#131515",
     textAlign: "center",
     position: "fixed",
     left: "0",
     bottom: "0",
-    height: "5vh",
-    minHeight: '40px',
     width: "100%"
   };
   
   const phantomStyle = {
     display: "block",
     height: "5vh",
+    minHeight: '40px',
     width: "100%"
   };
   
@@ -35,23 +35,20 @@
 
 const PageLayout = ({children, ...rest}) => {
   return (
-    <div style={{display: 'flex', flexDirection: 'column'}}>
-      <div>
+    <Flexbox flexDirection="column" minHeight="100vh">
+      <Flexbox>
         <NavBar />
-      </div>
-      <div style={{ backgroundColor: '#222222',}}>
+      </Flexbox>
+      <Flexbox flexGrow={1}>
         {children}
-      </div>
-      <div>
+      </Flexbox>
+      <Flexbox>
         <StickyFoot>
           <Footer/>
         </StickyFoot>
-      </div>
-    </div>
+      </Flexbox>
+    </Flexbox>
   )
 }
-
-
-
 
 export default PageLayout;
