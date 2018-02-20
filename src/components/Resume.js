@@ -1,30 +1,26 @@
 import React from 'react';
 import '../css/App.css';
+import resume from '../files/resume.pdf';
+import Flexbox from 'flexbox-react';
 
 class Resume extends React.Component {
   render(){
     return (
-      <div style={{fontFamily: 'FuturaPTBook'}}>
-        <div style={styles.flexContainer}>
-          <div style={styles.box}>
-            <h1>Resume Component</h1>
-          </div>
-        </div>
-      </div>
+      <Flexbox >
+        <Flexbox >
+          <Flexbox >
+
+          </Flexbox>
+        </Flexbox>
+      </Flexbox>
     )
   }
 }
 
 const styles = {
   flexContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    overflow: 'hidden',
   },
   box: {
-    flexDirection: 'column',
-    justifyContent: 'center', 
-    alignItems: 'center', 
   },
   text: {
     textAlign: 'center',

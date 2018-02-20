@@ -36,6 +36,17 @@ class NavBar extends React.Component {
           </Menu.Item>
         </Link>
 
+        <Link style={{color: 'white'}} to='/Blog'>
+          <Menu.Item 
+            name='Blog' 
+            active={activeItem === 'Blog'} 
+            onClick={this.handleItemClick} 
+            style={styles.menuButton}
+          >
+            Blog
+          </Menu.Item>
+        </Link>
+
         <Menu.Menu position='right' style={styles.menuButton}>
           <Dropdown item text='+ More' style={styles.menuButton}>
             <Dropdown.Menu>
