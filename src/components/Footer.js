@@ -42,11 +42,13 @@ const styles = {
     display: 'flex', 
     flexDirection: 'row', 
     alignItems: 'center', 
-    margin: 'auto',
+    margin: '0',
+    padding: '0',
     backgroundColor: '#131515',
     borderRadius: '0px',
-    borderTop: '1px solid #339989',
+    borderTop: '1px solid #7de2d1',
     justifyContent: 'center',
+    width: '100vw',
   },
   buttonBox:{
     display: 'flex', 
@@ -61,7 +63,7 @@ const styles = {
     width: '15vw',
   },
   icon: {
-    color: '#339989'
+    color: '#7de2d1'
   }
 }
 

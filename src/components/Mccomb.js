@@ -8,32 +8,31 @@ import logo from '../images/logo.svg';
 class Mccomb extends React.Component {
   render(){
     return (
-      <Flexbox flexDirection='column' minHeight='100vh'>
-
+      <Flexbox  flexDirection='column' minHeight='100vh'>
         {/* Title box */}
         <Flexbox flexDirection='column' style={styles.titleBox}>
-          <Flexbox style={{borderBottom: '2px solid #339989', padding: '0vw 3vw 0vw 3vw'}}>
-            McComb   
+          <Flexbox className="fadeName" style={{ padding: '0vw 3vw 0vw 3vw'}}>
+            McComb
           </Flexbox>
-          <Flexbox flexDirection='row' style={styles.subRow}>
-            <Flexbox style={styles.sub}>
+          <Flexbox className="fadeSub" flexDirection='row' style={styles.subRow}>
+            <Flexbox className="fadeOne" style={styles.sub}>
               Web Design
             </Flexbox>
-            <Flexbox style={styles.sub}>
+            <Flexbox className="fadeTwo" style={styles.sub}>
               Graphic Design
             </Flexbox>
-            <Flexbox style={styles.sub}>
+            <Flexbox className="fadeThree" style={styles.sub}>
               Junior Developer
             </Flexbox>
           </Flexbox>
         </Flexbox>
 
       {/* Paragraph Box */}
-        <Flexbox style={styles.descriptionBox}>
-          <Flexbox flexDirection='row' style={{width: '50vw'}}>
+        <Flexbox className="fadeBox"  style={styles.descriptionBox}>
+          <Flexbox  flexDirection='row' style={{width: '50vw'}}>
             <Flexbox flexDirection='column' style={{color: '#339989', padding: '40px 0px 50px 0px', }}>
 
-              <Flexbox flexDirection='column' style={{color: '#339989', padding: '0px 0px 20px 0px', }}>
+              <Flexbox className="fadeIntro" flexDirection='column' style={{color: '#339989', padding: '0px 0px 20px 0px', }}>
                 <Flexbox>
                   <h3 style={{fontFamily: 'Verdana', color: '#131515',paddingBottom: '5px'}}>
                     Hello,  I'm Erik McComb
@@ -47,7 +46,7 @@ class Mccomb extends React.Component {
                 </Flexbox>
               </Flexbox>
               
-              <Flexbox  flexDirection='row' style={{backgroundColor: '#2b2c28', color: '#fffafb', alignItems: 'center', justifyContent: 'center'}}>
+              <Flexbox className="fadeParagraph" flexDirection='row' style={{backgroundColor: '#2b2c28', color: '#fffafb', alignItems: 'center', justifyContent: 'center'}}>
                 <Flexbox flexDirection='column' style={{margin:'15px 7.5px 15px 15px'}}>
                   <Flexbox style={{marginBottom: '15px', textAlign: 'justify'}}>
                     <p>
@@ -59,11 +58,11 @@ class Mccomb extends React.Component {
                       Here you will find my resume, links to social media, my blog, and some fun interactive projects not necessarily built in React (including a game!). Click around, have some fun, even see what it looks like on your phone's web browser. Thank you very much for visiting!
                     </p>
                   </Flexbox>
-                  <Flexbox style={{alignItems: 'center', justifyContent: 'center'}}>
+                  <Flexbox className="fadeLogo" style={{alignItems: 'center', justifyContent: 'center'}}>
                     <Image className="App-logo" src={logo} size='tiny'/>
                   </Flexbox>
                 </Flexbox>
-                <Flexbox style={styles.textRight}>
+                <Flexbox className="fadeImage" style={styles.textRight}>
                   <Image src={me} size='large' style={{margin: '15px 15px 15px 7.5px'}}/>
                 </Flexbox>
               </Flexbox>
@@ -72,7 +71,7 @@ class Mccomb extends React.Component {
         </Flexbox>
 
         <Flexbox style={styles.photoBox}>
-
+          
         </Flexbox>
 
       </Flexbox>
@@ -86,7 +85,6 @@ const styles = {
     alignItems: 'center', 
     justifyContent: 'center', 
     height: 'auto', 
-    backgroundColor: '#131515',
     fontFamily: 'FuturaPTBook',
     fontSize: 'calc(30px + 10vw)',
     lineHeight: 'calc(30px + 10vw)',
@@ -104,6 +102,7 @@ const styles = {
     lineHeight: 'calc(2px + 2vw)',
     color: '#339989',
     paddingTop: '10px',
+    borderTop: '2px solid #339989',
   },
   descriptionBox: {
     backgroundColor: '#fffafb',

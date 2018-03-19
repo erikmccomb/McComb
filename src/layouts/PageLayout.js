@@ -4,29 +4,21 @@
   import NavBar from '../components/NavBar';
   import Footer from '../components/Footer';
   import Flexbox from 'flexbox-react';
-
-  function StickyFoot({ children }) {
-    return (
-      <div>
-        <div style={styles.phantomStyle} />
-        <div style={styles.footerStyle}>{children}</div>
-      </div>
-    );
-  }
+  import '../css/App.css';
 
 const PageLayout = ({children, ...rest}) => {
   return (
-    <Flexbox flexDirection="column" minHeight="100vh">
-      <Flexbox style={styles.navbar}>
-        <NavBar />
-      </Flexbox>
-      <Flexbox flexGrow={1}>
-        {children}
-      </Flexbox>
+    <Flexbox flexDirection="column" style={{height: '100vh'}}>
       <Flexbox>
-        <StickyFoot>
+        <Flexbox className="fadeNav" style={styles.navbar}>
+          <NavBar />
+        </Flexbox>
+        <Flexbox style={{flex: "1 1 auto"}}>
+          {children}
+        </Flexbox>
+        <Flexbox style={styles.footerStyle}>
           <Footer/>
-        </StickyFoot>
+        </Flexbox>
       </Flexbox>
     </Flexbox>
   )
@@ -36,20 +28,20 @@ const styles = {
   navbar:{
     position: "fixed",
     left: "0",
-    top: "0",
-    width: "100%",
+    Top: "0",
+    width: "100vw",
+    margin: "0px",
+    padding: "0px",
+    flex: "0 0 auto",
   },
   footerStyle: {
     position: "fixed",
     left: "0",
     bottom: "0",
-    width: "100%"
-  },
-  phantomStyle: {
-    display: "block",
-    height: "5vh",
-    minHeight: '40px',
-    width: "100%"
+    width: "100vw",
+    margin: "0px",
+    padding: "0px",
+    flex: "0 0 auto",
   },
 }
 
