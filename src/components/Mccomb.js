@@ -1,6 +1,9 @@
 import React from 'react';
 import '../css/App.css';
 import Flexbox from 'flexbox-react';
+import { Image } from 'semantic-ui-react';
+import me from '../images/me.jpg';
+import logo from '../images/logo.svg';
 
 class Mccomb extends React.Component {
   render(){
@@ -27,7 +30,7 @@ class Mccomb extends React.Component {
 
       {/* Paragraph Box */}
         <Flexbox style={styles.descriptionBox}>
-          <Flexbox flexDirection='row' style={{width: '85vw'}}>
+          <Flexbox flexDirection='row' style={{width: '50vw'}}>
             <Flexbox flexDirection='column' style={{color: '#339989', padding: '40px 0px 50px 0px', }}>
 
               <Flexbox flexDirection='column' style={{color: '#339989', padding: '0px 0px 20px 0px', }}>
@@ -44,16 +47,24 @@ class Mccomb extends React.Component {
                 </Flexbox>
               </Flexbox>
               
-              <Flexbox  flexDirection='row' style={{backgroundColor: '#2b2c28', color: '#fffafb'}}>
-                <Flexbox style={styles.text}>
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
+              <Flexbox  flexDirection='row' style={{backgroundColor: '#2b2c28', color: '#fffafb', alignItems: 'center', justifyContent: 'center'}}>
+                <Flexbox flexDirection='column' style={{margin:'15px 7.5px 15px 15px'}}>
+                  <Flexbox style={{marginBottom: '15px', textAlign: 'justify'}}>
+                    <p>
+                      Welcome to My Resume Website and Portfolio! I am a ReactJS focused web developer at the junior level, and I aspire to become a professional web developer. I have two years total developer experience, with an additional half a year of formal education in React development. This site, though just a resume site, is built in React and will be a continuing work in progress. 
+                    </p>
+                  </Flexbox>
+                  <Flexbox style={{marginTop: '15px', textAlign: 'justify'}}>
+                    <p>
+                      Here you will find my resume, links to social media, my blog, and some fun interactive projects not necessarily built in React (including a game!). Click around, have some fun, even see what it looks like on your phone's web browser. Thank you very much for visiting!
+                    </p>
+                  </Flexbox>
+                  <Flexbox style={{alignItems: 'center', justifyContent: 'center'}}>
+                    <Image className="App-logo" src={logo} size='tiny'/>
+                  </Flexbox>
                 </Flexbox>
-                <Flexbox style={styles.text}>
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
+                <Flexbox style={styles.textRight}>
+                  <Image src={me} size='large' style={{margin: '15px 15px 15px 7.5px'}}/>
                 </Flexbox>
               </Flexbox>
             </Flexbox>
@@ -92,7 +103,6 @@ const styles = {
     fontSize: 'calc(2px + 2vw)', 
     lineHeight: 'calc(2px + 2vw)',
     color: '#339989',
-    
     paddingTop: '10px',
   },
   descriptionBox: {
@@ -105,7 +115,13 @@ const styles = {
     height: '50vh', 
   },
   text: {
-    padding: '20px 20px 40px 20px', 
+    padding: '10px 10px 10px 10px', 
+    textAlign: 'justify'
+  },
+  textLeft: { 
+    textAlign: 'justify'
+  },
+  textRight: {
     textAlign: 'justify'
   },
 }

@@ -6,41 +6,30 @@
   import 'semantic-ui-css/semantic.min.css';
 
 class NavBar extends React.Component {
-  //Handles the active page indicator
-  state = { activeItem: 'home' }
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
   render() {
-    const { activeItem } = this.state
     return (
       <Menu  borderless style={styles.menuStyle} >
-        <Link style={{color: 'white'}} to='/McComb'>
+        <Link to='/McComb'>
           <Menu.Item 
             name='Mccomb' 
-            active={activeItem === 'McComb'} 
-            onClick={this.handleItemClick} 
             style={styles.menuButton}
           >
             McComb
           </Menu.Item>
         </Link>
 
-        <Link style={{color: 'white'}} to='/Portfolio'>
+        <Link to='/Portfolio'>
           <Menu.Item 
             name='Portfolio' 
-            active={activeItem === 'Portfolio'} 
-            onClick={this.handleItemClick} 
             style={styles.menuButton}
           >
             Portfolio
           </Menu.Item>
         </Link>
 
-        <Link style={{color: 'white'}} to='/Blog'>
+        <Link to='/Blog'>
           <Menu.Item 
             name='Blog' 
-            active={activeItem === 'Blog'} 
-            onClick={this.handleItemClick} 
             style={styles.menuButton}
           >
             Blog
@@ -49,7 +38,7 @@ class NavBar extends React.Component {
 
         <Menu.Menu position='right' style={styles.menuButton}>
           <Dropdown item text='+ More' style={styles.menuButton}>
-            <Dropdown.Menu>
+            <Dropdown.Menu style={{backgroundColor: '#131515', borderLeft: '1px solid #339989', borderRight: '1px solid #339989', borderBottom: '1px solid #339989'}}>
 
               <Dropdown.Item>
                 <Link to='/Resume'>
@@ -85,6 +74,7 @@ const styles = {
     borderBottom: '1px solid #339989',
     fontFamily: 'FuturaPTLightOblique',
     width: '100vw',
+    fontSize: '15px',
   }
 }
 
