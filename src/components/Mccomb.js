@@ -28,11 +28,11 @@ class Mccomb extends React.Component {
         </Flexbox>
 
       {/* Paragraph Box */}
-        <Flexbox className="fadeBox"  style={styles.descriptionBox}>
+        <Flexbox className="fadeRest"  style={styles.descriptionBox}>
           <Flexbox  flexDirection='row' style={{width: '50vw'}}>
             <Flexbox flexDirection='column' style={{color: '#339989', padding: '40px 0px 50px 0px', }}>
 
-              <Flexbox className="fadeIntro" flexDirection='column' style={{color: '#339989', padding: '0px 0px 20px 0px', }}>
+              <Flexbox className="fadeRest" flexDirection='column' style={{color: '#339989', padding: '0px 0px 20px 0px', }}>
                 <Flexbox>
                   <h3 style={{fontFamily: 'Verdana', color: '#131515',paddingBottom: '5px'}}>
                     Hello,  I'm Erik McComb
@@ -46,7 +46,7 @@ class Mccomb extends React.Component {
                 </Flexbox>
               </Flexbox>
               
-              <Flexbox className="fadeParagraph" flexDirection='row' style={{backgroundColor: '#2b2c28', color: '#fffafb', alignItems: 'center', justifyContent: 'center'}}>
+              <Flexbox className="fadeRest" flexDirection='row' style={{backgroundColor: '#2b2c28', color: '#fffafb', alignItems: 'center', justifyContent: 'center'}}>
                 <Flexbox flexDirection='column' style={{margin:'15px 7.5px 15px 15px'}}>
                   <Flexbox style={{marginBottom: '15px', textAlign: 'justify'}}>
                     <p>
@@ -58,11 +58,11 @@ class Mccomb extends React.Component {
                       Here you will find my resume, links to social media, my blog, and some fun interactive projects not necessarily built in React (including a game!). Click around, have some fun, even see what it looks like on your phone's web browser. Thank you very much for visiting!
                     </p>
                   </Flexbox>
-                  <Flexbox className="fadeLogo" style={{alignItems: 'center', justifyContent: 'center'}}>
+                  <Flexbox className="fadeRest" style={{alignItems: 'center', justifyContent: 'center'}}>
                     <Image className="App-logo" src={logo} size='tiny'/>
                   </Flexbox>
                 </Flexbox>
-                <Flexbox className="fadeImage" style={styles.textRight}>
+                <Flexbox className="fadeRest" style={styles.textRight}>
                   <Image src={me} size='large' style={{margin: '15px 15px 15px 7.5px'}}/>
                 </Flexbox>
               </Flexbox>

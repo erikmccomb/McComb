@@ -27,7 +27,6 @@ const PageLayoutRoute = ({ component: Component, ...rest }) => {
 class App extends React.Component {
   render(){
     return (
-      <div style={{height: '100vh'}}>
       <Router>
         <Switch>
           <PageLayoutRoute exact path='/' component={Mccomb} />
@@ -38,7 +37,6 @@ class App extends React.Component {
           <PageLayoutRoute component={NoMatch} />
         </Switch>
       </Router>
-      </div>
     )
   }
 }

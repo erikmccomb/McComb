@@ -8,30 +8,68 @@
 class NavBar extends React.Component {
   render() {
     return (
-      <Menu borderless size='mini' style={styles.buttonRow}>
-        <Menu.Item style={styles.button} name='Github' >
-          hi
-        </Menu.Item>
+      <Menu  borderless style={styles.menuStyle} >
+        <Link to='/McComb'>
+          <Menu.Item 
+            name='Mccomb' 
+            style={styles.menuButton}
+          >
+            McComb
+          </Menu.Item>
+        </Link>
 
-        <Menu.Item style={styles.button} name='Linkedin' >
-          hi
-        </Menu.Item>
+        <Link to='/Portfolio'>
+          <Menu.Item 
+            name='Portfolio' 
+            style={styles.menuButton}
+          >
+            Portfolio
+          </Menu.Item>
+        </Link>
 
-        <Menu.Item style={styles.button} name='Twitter' >
-          hi
-        </Menu.Item>
+        <Link to='/Blog'>
+          <Menu.Item 
+            name='Blog' 
+            style={styles.menuButton}
+          >
+            Blog
+          </Menu.Item>
+        </Link>
 
-        <Menu.Item style={styles.button} name='Instagram'>
-          hi
-        </Menu.Item>
+        <Menu.Menu position='right' style={styles.menuButton}>
+          <Dropdown item text='+ More' style={styles.menuButton}>
+            <Dropdown.Menu style={{backgroundColor: '#131515', borderLeft: '1px solid #339989', borderRight: '1px solid #339989', borderBottom: '1px solid #339989'}}>
+
+              <Dropdown.Item>
+                <Link to='/Resume'>
+                  <div style={styles.menuButton}> 
+                    Resume
+                  </div>
+                </Link>
+              </Dropdown.Item>
+
+              <Dropdown.Item>
+                <Link to='/Contact'>
+                  <div style={styles.menuButton}>
+                    Contact Me!
+                  </div>
+                </Link>
+              </Dropdown.Item>
+              
+            </Dropdown.Menu>
+          </Dropdown>
+        </Menu.Menu>
       </Menu>
     )
   }
 }
 
 const styles = {
-  buttonRow: {
-    display: 'flex', 
+  menuButton: {
+    color: '#7de2d1',
+  },
+  menuStyle: {
+    fontFamily: 'FuturaPTLightOblique', 
     flexDirection: 'row', 
     alignItems: 'center', 
     margin: '0',
@@ -41,100 +79,7 @@ const styles = {
     borderBottom: '1px solid #7de2d1',
     justifyContent: 'center',
     width: '100vw',
-    color: '#7de2d1',
-  },
-  buttonBox:{
-    display: 'flex', 
-    flexDirection: 'row', 
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  button: {
-    display: 'flex', 
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '15vw',
-  },
-  icon: {
-    color: '#7de2d1'
   }
 }
-
-  //   render() {
-//     return (
-//       <Menu  borderless style={styles.menuStyle} >
-//         <Link to='/McComb'>
-//           <Menu.Item 
-//             name='Mccomb' 
-//             style={styles.menuButton}
-//           >
-//             McComb
-//           </Menu.Item>
-//         </Link>
-
-//         <Link to='/Portfolio'>
-//           <Menu.Item 
-//             name='Portfolio' 
-//             style={styles.menuButton}
-//           >
-//             Portfolio
-//           </Menu.Item>
-//         </Link>
-
-//         <Link to='/Blog'>
-//           <Menu.Item 
-//             name='Blog' 
-//             style={styles.menuButton}
-//           >
-//             Blog
-//           </Menu.Item>
-//         </Link>
-
-//         <Menu.Menu position='right' style={styles.menuButton}>
-//           <Dropdown item text='+ More' style={styles.menuButton}>
-//             <Dropdown.Menu style={{backgroundColor: '#131515', borderLeft: '1px solid #339989', borderRight: '1px solid #339989', borderBottom: '1px solid #339989'}}>
-
-//               <Dropdown.Item>
-//                 <Link to='/Resume'>
-//                   <div style={styles.menuButton}> 
-//                     Resume
-//                   </div>
-//                 </Link>
-//               </Dropdown.Item>
-
-//               <Dropdown.Item>
-//                 <Link to='/Contact'>
-//                   <div style={styles.menuButton}>
-//                     Contact Me!
-//                   </div>
-//                 </Link>
-//               </Dropdown.Item>
-              
-//             </Dropdown.Menu>
-//           </Dropdown>
-//         </Menu.Menu>
-//       </Menu>
-//     )
-//   }
-// }
-
-// const styles = {
-//   menuButton: {
-//     color: '#7de2d1',
-//   },
-//   menuStyle: {
-//     fontFamily: 'FuturaPTLightOblique',
-//     display: 'flex', 
-//     flexDirection: 'row', 
-//     alignItems: 'center', 
-//     margin: '0',
-//     padding: '0',
-//     backgroundColor: '#131515',
-//     borderRadius: '0px',
-//     borderBottom: '1px solid #7de2d1',
-//     justifyContent: 'center',
-//     width: '100vw',
-//   }
-// }
 
 export default NavBar;

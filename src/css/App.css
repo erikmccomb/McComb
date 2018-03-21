@@ -47,66 +47,8 @@
   opacity:0
 }
     
-.fadeNav {
+.fadeRest {
   animation:1s ease 4.2s normal forwards 1 fadein;
   -webkit-animation:1s ease 4.2s normal forwards 1 fadein;
   opacity:0
 }
-
-.fadeFoot {
-  animation:1s ease 4.9s normal forwards 1 fadein;
-  -webkit-animation:1s ease 4.9s normal forwards 1 fadein;
-  opacity:0
-}
-
-.fadeBox {
-  animation:1s ease 5.6s normal forwards 1 fadein;
-  -webkit-animation:1s ease 5.6s normal forwards 1 fadein;
-  opacity:0
-}
-
-.fadeIntro {
-  animation:1s ease 6.4s normal forwards 1 fadein;
-  -webkit-animation:1s ease 6.4s normal forwards 1 fadein;
-  opacity:0
-}
-
-.fadeParagraph {
-  animation:1s ease 7.1s normal forwards 1 fadein;
-  -webkit-animation:1s ease 7.1s normal forwards 1 fadein;
-  opacity:0
-}
-
-.fadeImage {
-  animation:1s ease 7.8s normal forwards 1 fadein;
-  -webkit-animation:1s ease 7.8s normal forwards 1 fadein;
-  opacity:0
-}
-
-.fadeLogo {
-  animation:1s ease 8.5s normal forwards 1 fadein;
-  -webkit-animation:1s ease 8.5s normal forwards 1 fadein;
-  opacity:0
-}
-
-
-
-
-
-/* .fade-in {
-  animation:1s ease 1s normal forwards 1 fadein;
-  -webkit-animation:1s ease 1s normal forwards 1 fadein;
-  opacity:0
-}
-
-.fade-in-long {
-  animation:1s ease 2s normal forwards 1 fadein;
-  -webkit-animation:1s ease 2s normal forwards 1 fadein;
-  opacity:0
-}
-
-.fade-in-longer {
-  animation:1s ease 3s normal forwards 1 fadein;
-  -webkit-animation:1s ease 3s normal forwards 1 fadein;
-  opacity:0
-} */

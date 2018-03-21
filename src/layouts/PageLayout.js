@@ -8,41 +8,26 @@
 
 const PageLayout = ({children, ...rest}) => {
   return (
-    <Flexbox flexDirection="column" style={{height: '100vh'}}>
-      <Flexbox>
-        <Flexbox className="fadeNav" style={styles.navbar}>
-          <NavBar />
-        </Flexbox>
-        <Flexbox style={{flex: "1 1 auto"}}>
-          {children}
-        </Flexbox>
-        <Flexbox style={styles.footerStyle}>
-          <Footer/>
-        </Flexbox>
+    <Flexbox flexDirection="column">
+
+      <Flexbox height="5vh" style={{overflow: "hidden"}}>
+        <div className="fadeRest">
+          <NavBar/>
+        </div>
       </Flexbox>
+      
+      <Flexbox height="90vh" style={{overflow: "scroll"}}>
+        {children}
+      </Flexbox>
+      
+      <Flexbox height="5vh" style={{overflow: "hidden"}}>
+        <div className="fadeRest">
+          <Footer/>
+        </div>
+      </Flexbox>
+
     </Flexbox>
   )
-}
-
-const styles = {
-  navbar:{
-    position: "fixed",
-    left: "0",
-    Top: "0",
-    width: "100vw",
-    margin: "0px",
-    padding: "0px",
-    flex: "0 0 auto",
-  },
-  footerStyle: {
-    position: "fixed",
-    left: "0",
-    bottom: "0",
-    width: "100vw",
-    margin: "0px",
-    padding: "0px",
-    flex: "0 0 auto",
-  },
 }
 
 export default PageLayout;
