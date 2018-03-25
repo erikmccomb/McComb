@@ -8,24 +8,20 @@
 
 const PageLayout = ({children, ...rest}) => {
   return (
-    <Flexbox flexDirection="column">
+    <Flexbox flexDirection="column" minHeight="100vh">
+      <Flexbox element="header" height='4.5vh' className="fadeRest">
+        <NavBar/>
+      </Flexbox>
 
-      <Flexbox height="5vh" style={{overflow: "hidden"}}>
-        <div className="fadeRest">
-          <NavBar/>
-        </div>
-      </Flexbox>
-      
-      <Flexbox height="90vh" style={{overflow: "scroll"}}>
-        {children}
-      </Flexbox>
-      
-      <Flexbox height="5vh" style={{overflow: "hidden"}}>
-        <div className="fadeRest">
-          <Footer/>
+      <Flexbox className='bodyScroll' height='91vh'>
+        <div  style={{overflow: "auto", width: '100vw'}}>
+          {children}
         </div>
       </Flexbox>
 
+      <Flexbox element="footer" height='4.5vh' className="fadeRest">
+        <Footer/>
+      </Flexbox>
     </Flexbox>
   )
 }

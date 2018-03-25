@@ -4,43 +4,46 @@ import Flexbox from 'flexbox-react';
 import { Image } from 'semantic-ui-react';
 import me from '../images/me.jpg';
 import logo from '../images/logo.svg';
+import Resume from './Resume';
 
 class Mccomb extends React.Component {
   render(){
     return (
-      <Flexbox  flexDirection='column' minHeight='100vh'>
-        {/* Title box */}
-        <Flexbox flexDirection='column' style={styles.titleBox}>
-          <Flexbox className="fadeName" style={{ padding: '0vw 3vw 0vw 3vw'}}>
-            McComb
+      <Flexbox  flexDirection='column'>
+      
+        <Flexbox flexDirection='column' style={{width: '100vw',alignItems: 'center', justifyContent: 'center', padding: '27vh 0vh 27vh 0vh'}}>
+          <Flexbox className="fadeName" style={{padding: '0vw 3vw 0vw 3vw', alignItems: 'center', justifyContent: 'center'}}>
+            <div style={{fontFamily: 'FuturaPTBook', fontSize: 'calc(30px + 10vw)', lineHeight: 'calc(30px + 10vw)', color: '#7de2d1'}}> 
+              McComb
+            </div>
           </Flexbox>
+
           <Flexbox className="fadeSub" flexDirection='row' style={styles.subRow}>
             <Flexbox className="fadeOne" style={styles.sub}>
-              Web Design
-            </Flexbox>
-            <Flexbox className="fadeTwo" style={styles.sub}>
               Graphic Design
             </Flexbox>
+            <Flexbox className="fadeTwo" style={styles.sub}>
+              Web Design & Developer
+            </Flexbox>
             <Flexbox className="fadeThree" style={styles.sub}>
-              Junior Developer
+              QA Engineer
             </Flexbox>
           </Flexbox>
         </Flexbox>
 
-      {/* Paragraph Box */}
         <Flexbox className="fadeRest"  style={styles.descriptionBox}>
-          <Flexbox  flexDirection='row' style={{width: '50vw'}}>
+          <Flexbox  flexDirection='row' style={{width: '75vw'}}>
             <Flexbox flexDirection='column' style={{color: '#339989', padding: '40px 0px 50px 0px', }}>
 
               <Flexbox className="fadeRest" flexDirection='column' style={{color: '#339989', padding: '0px 0px 20px 0px', }}>
                 <Flexbox>
-                  <h3 style={{fontFamily: 'Verdana', color: '#131515',paddingBottom: '5px'}}>
+                  <h3 style={{fontFamily: 'Verdana', color: '#131515',paddingBottom: '5px', fontSize: 'calc(2px + 2vh)', lineHeight: 'calc(4px + 2vh)',}}>
                     Hello,  I'm Erik McComb
                   </h3>
                 </Flexbox>
                 <Flexbox>
-                  <h5 style={{fontFamily: 'Calendas_Plus', color: '#339989'}}>
-                  Father, Developer, Oddball
+                  <h5 style={{fontFamily: 'Calendas_Plus', color: '#339989', fontSize: 'calc(6px + 1vh)', lineHeight: 'calc(7px + 1vh)'}}>
+                    Developer, Father, Popcorn Enthousiast
                   </h5>
                   
                 </Flexbox>
@@ -48,32 +51,33 @@ class Mccomb extends React.Component {
               
               <Flexbox className="fadeRest" flexDirection='row' style={{backgroundColor: '#2b2c28', color: '#fffafb', alignItems: 'center', justifyContent: 'center'}}>
                 <Flexbox flexDirection='column' style={{margin:'15px 7.5px 15px 15px'}}>
-                  <Flexbox style={{marginBottom: '15px', textAlign: 'justify'}}>
+                  <Flexbox flexDirection='column' style={{marginBottom: '15px', textAlign: 'justify', fontSize: 'calc(1px + 1vw)', lineHeight: 'calc(1px + 1vw)',}}>
                     <p>
-                      Welcome to My Resume Website and Portfolio! I am a ReactJS focused web developer at the junior level, and I aspire to become a professional web developer. I have two years total developer experience, with an additional half a year of formal education in React development. This site, though just a resume site, is built in React and will be a continuing work in progress. 
+                      I am a web designer & developer based in Salt Lake City, Utah. I'm experienced in the latest technologies, so I know how to build your site to run on any device you need to reach your audience. Responsive Design, ReactJS, HTML, CSS - I am a Front end developer looking to expand on what I know, and further grow as a developer.
                     </p>
-                  </Flexbox>
-                  <Flexbox style={{marginTop: '15px', textAlign: 'justify'}}>
                     <p>
-                      Here you will find my resume, links to social media, my blog, and some fun interactive projects not necessarily built in React (including a game!). Click around, have some fun, even see what it looks like on your phone's web browser. Thank you very much for visiting!
+                      My passion is UI/UX design and implementation. Improving overall customer experience by making it easier and more intuitive to use your site - That is my favorite job.
+                    </p>
+                    <p>
+                      Here you will find my resume, a few links to social media, my blog, and some fun interactive projects. Click around, have some fun. Thanks for stopping by!
                     </p>
                   </Flexbox>
                   <Flexbox className="fadeRest" style={{alignItems: 'center', justifyContent: 'center'}}>
                     <Image className="App-logo" src={logo} size='tiny'/>
                   </Flexbox>
                 </Flexbox>
-                <Flexbox className="fadeRest" style={styles.textRight}>
-                  <Image src={me} size='large' style={{margin: '15px 15px 15px 7.5px'}}/>
-                </Flexbox>
+                <div className="fadeRest" style={styles.textRight}>
+                  <Image src={me} size='huge' style={{padding: '15px 15px 15px 7.5px'}}/>
+                </div>
               </Flexbox>
             </Flexbox>
           </Flexbox>
         </Flexbox>
-
-        <Flexbox style={styles.photoBox}>
-          
+        
+        <Flexbox className="fadeRest" style={{width: '100vw'}}>
+          <Resume/>
         </Flexbox>
-
+      
       </Flexbox>
     )
   }
@@ -85,20 +89,19 @@ const styles = {
     alignItems: 'center', 
     justifyContent: 'center', 
     height: 'auto', 
-    fontFamily: 'FuturaPTBook',
-    fontSize: 'calc(30px + 10vw)',
-    lineHeight: 'calc(30px + 10vw)',
-    color: '#7de2d1',
+    
     padding: '15vh 0vh 15vh 0vh',
   },
   sub: {
-    padding: '0vw 2vw 0vw 2vw',
+    alignItems: 'center', 
+    justifyContent: 'center'
   },
   subRow: {
-    justifyContent: 'space-around', 
-    overflow: 'hidden', 
-    fontFamily: 'Calendas_Plus', 
-    fontSize: 'calc(2px + 2vw)', 
+    justifyContent: 'space-between',
+    overflow: 'hidden',
+    width: '55vw',
+    fontFamily: 'Calendas_Plus',
+    fontSize: 'calc(1px + 2vw)',
     lineHeight: 'calc(2px + 2vw)',
     color: '#339989',
     paddingTop: '10px',
