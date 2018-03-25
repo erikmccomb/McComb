@@ -13,20 +13,26 @@ class Mccomb extends React.Component {
       
         <Flexbox flexDirection='column' style={{width: '100vw',alignItems: 'center', justifyContent: 'center', padding: '27vh 0vh 27vh 0vh'}}>
           <Flexbox className="fadeName" style={{padding: '0vw 3vw 0vw 3vw', alignItems: 'center', justifyContent: 'center'}}>
-            <div style={{fontFamily: 'FuturaPTBook', fontSize: 'calc(30px + 10vw)', lineHeight: 'calc(30px + 10vw)', color: '#7de2d1'}}> 
+            <div style={{fontFamily: 'FuturaPTBook', fontSize: 'calc(30px + 10vw)', lineHeight: 'calc(30px + 10vw)', color: '#7de2d1', padding: '0vw 3vw 0vw 3vw'}}> 
               McComb
             </div>
           </Flexbox>
 
           <Flexbox className="fadeSub" flexDirection='row' style={styles.subRow}>
             <Flexbox className="fadeOne" style={styles.sub}>
-              Graphic Design
+              <div style={{paddingRight: '4vw'}}>
+                Graphic Design
+              </div>
             </Flexbox>
             <Flexbox className="fadeTwo" style={styles.sub}>
-              Web Design & Developer
+              <div >
+                Web Design & Developer
+              </div>
             </Flexbox>
             <Flexbox className="fadeThree" style={styles.sub}>
-              QA Engineer
+              <div style={{paddingLeft: '4vw'}}>
+                QA Engineer
+              </div>
             </Flexbox>
           </Flexbox>
         </Flexbox>
@@ -73,11 +79,8 @@ class Mccomb extends React.Component {
             </Flexbox>
           </Flexbox>
         </Flexbox>
-        
-        <Flexbox className="fadeRest" style={{width: '100vw'}}>
-          <Resume/>
-        </Flexbox>
-      
+        <Flexbox></Flexbox>
+        <Resume/>
       </Flexbox>
     )
   }
@@ -99,13 +102,15 @@ const styles = {
   subRow: {
     justifyContent: 'space-between',
     overflow: 'hidden',
-    width: '55vw',
+    minWidth: '43vw',
     fontFamily: 'Calendas_Plus',
     fontSize: 'calc(1px + 2vw)',
-    lineHeight: 'calc(2px + 2vw)',
+    lineHeight: 'calc(1px + 2vw)',
     color: '#339989',
     paddingTop: '10px',
-    borderTop: '2px solid #339989',
+    paddingLeft: '2vw',
+    paddingRight: '2vw',
+    borderTop: '2px solid #339989'
   },
   descriptionBox: {
     backgroundColor: '#fffafb',
