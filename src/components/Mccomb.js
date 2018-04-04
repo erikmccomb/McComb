@@ -38,7 +38,7 @@ class Mccomb extends React.Component {
         </Flexbox>
 
         <Flexbox className="fadeRest"  style={styles.descriptionBox}>
-          <Flexbox  flexDirection='row' style={{width: '75vw'}}>
+          <Flexbox  flexDirection='row' style={{width: '75vw', alignItems: 'center', justifyContent: 'center' }}>
             <Flexbox flexDirection='column' style={{color: '#339989', padding: '40px 0px 50px 0px', }}>
 
               <Flexbox className="fadeRest" flexDirection='column' style={{color: '#339989', padding: '0px 0px 20px 0px', }}>
@@ -55,9 +55,9 @@ class Mccomb extends React.Component {
                 </Flexbox>
               </Flexbox>
               
-              <Flexbox className="fadeRest" flexDirection='row' style={{backgroundColor: '#2b2c28', color: '#fffafb', alignItems: 'center', justifyContent: 'center'}}>
+              <Flexbox className="fadeRest" flexDirection='row' style={{backgroundColor: '#2b2c28', color: '#fffafb', alignItems: 'center', justifyContent: 'center', maxWidth: '750px'}}>
                 <Flexbox flexDirection='column' style={{margin:'15px 7.5px 15px 15px'}}>
-                  <Flexbox flexDirection='column' style={{marginBottom: '15px', textAlign: 'justify', fontSize: 'calc(1px + 1vw)', lineHeight: 'calc(1px + 1vw)',}}>
+                  <Flexbox flexDirection='column' style={{marginBottom: '15px', textAlign: 'justify', fontSize: '12px'}}>
                     <p>
                       I am a web designer & developer based in Salt Lake City, Utah. I'm experienced in the latest technologies, so I know how to build your site to run on any device you need to reach your audience. Responsive Design, ReactJS, HTML, CSS - I am a Front end developer looking to expand on what I know, and further grow as a developer.
                     </p>
@@ -92,7 +92,6 @@ const styles = {
     alignItems: 'center', 
     justifyContent: 'center', 
     height: 'auto', 
-    
     padding: '15vh 0vh 15vh 0vh',
   },
   sub: {

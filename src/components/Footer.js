@@ -44,9 +44,9 @@ const styles = {
     alignItems: 'center', 
     margin: '0',
     padding: '0',
-    backgroundColor: '#131515',
+    backgroundColor: '#7de2d1',
     borderRadius: '0px',
-    borderTop: '1px solid #7de2d1',
+    borderTop: '1px solid #131515',
     justifyContent: 'center',
     width: '100vw',
   },
@@ -63,7 +63,7 @@ const styles = {
     width: '15vw',
   },
   icon: {
-    color: '#7de2d1'
+    color: '#131515'
   }
 }
 

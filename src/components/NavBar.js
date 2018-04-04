@@ -38,8 +38,17 @@ class NavBar extends React.Component {
 
         <Menu.Menu position='right' style={styles.menuButton}>
           <Dropdown item text='+ More' style={styles.menuButton}>
-            <Dropdown.Menu style={{backgroundColor: '#131515', borderLeft: '1px solid #339989', borderRight: '1px solid #339989', borderBottom: '1px solid #339989'}}>
-
+            <Dropdown.Menu style={{    
+              fontFamily: 'FuturaPTLightOblique',
+              fontSize: '16px',
+              flexDirection: 'row', 
+              alignItems: 'center', 
+              margin: '0',
+              padding: '0',
+              backgroundColor: '#7de2d1',
+              borderBottom: '1px solid #131515',
+              justifyContent: 'center'
+            }}>
               <Dropdown.Item>
                 <Link to='/Resume'>
                   <div style={styles.menuButton}> 
@@ -66,17 +75,18 @@ class NavBar extends React.Component {
 
 const styles = {
   menuButton: {
-    color: '#7de2d1',
+    color: '#131515',
   },
   menuStyle: {
-    fontFamily: 'FuturaPTLightOblique', 
+    fontFamily: 'FuturaPTLightOblique',
+    fontSize: '16px',
     flexDirection: 'row', 
     alignItems: 'center', 
     margin: '0',
     padding: '0',
-    backgroundColor: '#131515',
+    backgroundColor: '#7de2d1',
     borderRadius: '0px',
-    borderBottom: '1px solid #7de2d1',
+    borderBottom: '1px solid #131515',
     justifyContent: 'center',
     width: '100vw',
   }
