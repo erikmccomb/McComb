@@ -67,7 +67,7 @@ class Resume extends React.Component {
               <td>
                 <ul>
                   <li>
-                    Personal web design & graphic design project 
+                    Personal web design & graphic design projects
                   </li>
                 
                   <li>
