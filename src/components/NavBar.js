@@ -47,7 +47,7 @@ class NavBar extends React.Component {
               padding: '0',
               backgroundColor: '#7de2d1',
               borderBottom: '1px solid #131515',
-              justifyContent: 'center'
+              justifyContent: 'center',
             }}>
               <Dropdown.Item>
                 <Link to='/Resume'>
@@ -89,6 +89,7 @@ const styles = {
     borderBottom: '1px solid #131515',
     justifyContent: 'center',
     width: '100vw',
+    minHeight: '4.5vh'
   }
 }
 
