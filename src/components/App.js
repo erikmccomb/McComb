@@ -9,7 +9,7 @@ import SplashLayout from '../layouts/SplashLayout';
 import Mccomb from './Mccomb';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
-import Resume from './Resume';
+import Resume from './MccombComponents/Resume';
 import NoMatch from './NoMatch';
 import Splash from './Splash';
 

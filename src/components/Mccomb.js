@@ -1,10 +1,10 @@
 import React from 'react';
 import '../css/App.css';
 import Flexbox from 'flexbox-react';
-import Name from './Name';
-import About from './About';
-import Resume from './Resume';
-import Quote from './Quote';
+import Name from './MccombComponents/Name';
+import About from './MccombComponents/About';
+import Resume from './MccombComponents/Resume';
+import Quote from './MccombComponents/Quote';
 
 class Mccomb extends React.Component {
   render(){

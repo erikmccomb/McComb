@@ -1,9 +1,9 @@
 import React from 'react';
-import '../css/App.css';
+import '../../css/App.css';
 import Flexbox from 'flexbox-react';
 import { Image } from 'semantic-ui-react';
-import me from '../images/me.jpg';
-import logo from '../images/logo.svg';
+import me from '../../images/me.jpg';
+import logo from '../../images/logo.svg';
 
 const Quote = () => {
   return (

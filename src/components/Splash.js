@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/App.css';
 import Flexbox from 'flexbox-react';
-import Name from './Name';
+import Name from './MccombComponents/Name';
 import { Link } from 'react-router-dom';
 
 class Mccomb extends React.Component {
