@@ -7,7 +7,7 @@ import logo from '../images/logo.svg';
 
 const About = () => {
   return (
-    <Flexbox className="fadeRest"  style={styles.descriptionBox}>
+    <Flexbox style={styles.descriptionBox}>
       <Flexbox  flexDirection='row' style={styles.rowBox}>
         <Flexbox flexDirection='column' style={styles.colBox}>
 

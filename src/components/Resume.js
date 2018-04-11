@@ -250,14 +250,12 @@ const styles = {
   },
   titleName: {
     fontFamily: 'FuturaPTBook', 
-    fontSize: 'calc(10px + 4vw)', 
-    lineHeight: 'calc(10px + 4vw)', 
+    fontSize: '45px', 
+    lineHeight: '45px', 
     color: '#7de2d1', 
-    borderBottom: '2px solid #339989', 
-    marginBottom: '1vh', 
+    borderBottom: '2px solid #339989',  
     padding: '0vw 3vw 0vw 3vw', 
     alignItems: 'center', 
-    justifyContent: 'center'
   },
   sectionBox: {
     width: '55vw',

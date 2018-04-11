@@ -5,24 +5,24 @@ import Flexbox from 'flexbox-react';
 const Name = () => {
   return (
     <Flexbox flexDirection='column' style={styles.titleBox}>
-      <Flexbox className="fadeName" style={styles.nameContainer}>
+      <Flexbox  style={styles.nameContainer}>
         <div style={styles.titleName}> 
           McComb
         </div>
       </Flexbox>
 
-      <Flexbox className="fadeSub" flexDirection='row' style={styles.subRow}>
-        <Flexbox className="fadeOne" style={styles.sub}>
+      <Flexbox flexDirection='row' style={styles.subRow}>
+        <Flexbox style={styles.sub}>
           <div style={{paddingRight: '4vw'}}>
             Graphic Design
           </div>
         </Flexbox>
-        <Flexbox className="fadeTwo" style={styles.sub}>
+        <Flexbox style={styles.sub}>
           <div >
             Web Design & Developer
           </div>
         </Flexbox>
-        <Flexbox className="fadeThree" style={styles.sub}>
+        <Flexbox style={styles.sub}>
           <div style={{paddingLeft: '4vw'}}>
             QA Engineer
           </div>
@@ -34,10 +34,8 @@ const Name = () => {
 
 const styles = {
   titleBox: {
-    width: '100vw',
     alignItems: 'center',
-    justifyContent: 'center',
-    padding: '27vh 0vh 27vh 0vh'
+    justifyContent: 'center'
   },
   titleName: {
     fontFamily: 'FuturaPTBook',
@@ -56,9 +54,11 @@ const styles = {
     justifyContent: 'center'
   },
   subRow: {
+    alignItems: 'center',
     justifyContent: 'space-between',
     overflow: 'hidden',
     minWidth: '43vw',
+    maxWidth: '55vw',
     fontFamily: 'Calendas_Plus',
     fontSize: 'calc(10px + 1vw)',
     lineHeight: 'calc(10px + 1vw)',

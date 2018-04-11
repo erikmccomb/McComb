@@ -1,25 +1,35 @@
-// Required by React
-  import React from 'react';
-  import { 
-    BrowserRouter as Router,
-    Route,  
-    Switch 
-  } from 'react-router-dom';
-// Layouts
-  import PageLayout from '../layouts/PageLayout';
-// Components
-  import Mccomb from './Mccomb';
-  import Portfolio from './Portfolio';
-  import Contact from './Contact';
-  import Resume from './Resume';
-  import NoMatch from './NoMatch';
+import React from 'react';
+import { 
+  BrowserRouter as Router,
+  Route,  
+  Switch 
+} from 'react-router-dom';
+import PageLayout from '../layouts/PageLayout';
+import SplashLayout from '../layouts/SplashLayout';
+import Mccomb from './Mccomb';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+import Resume from './Resume';
+import NoMatch from './NoMatch';
+import Splash from './Splash';
 
-const PageLayoutRoute = ({ component: Component, ...rest }) => {
+
+const PageLayoutRoute = ({ component: Component }) => {
   return (
-    <Route {...rest} render={matchProps => (
-      <PageLayout style={{height: '100vh'}}>
+    <Route render={matchProps => (
+      <PageLayout >
         <Component {...matchProps} />
       </PageLayout>
+    )} />
+  )
+}
+
+const SplashLayoutRoute = ({ component: Component }) => {
+  return (
+    <Route render={matchProps => (
+      <SplashLayout>
+        <Component {...matchProps} />
+      </SplashLayout>
     )} />
   )
 }
@@ -29,7 +39,7 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
-          <PageLayoutRoute exact path='/' component={Mccomb} />
+          <SplashLayoutRoute exact path='/' component={Splash} />
           <PageLayoutRoute exact path='/McComb' component={Mccomb} />
           <PageLayoutRoute exact path='/Portfolio' component={Portfolio} />
           <PageLayoutRoute exact path='/Resume' component={Resume} />

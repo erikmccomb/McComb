@@ -39,6 +39,7 @@ const styles = {
     backgroundSize: 'cover',
     overflow: 'hidden',
     width: '100vw',
+    minHeight: '94.5vh'
   },
   box: {
     flexDirection: 'column',

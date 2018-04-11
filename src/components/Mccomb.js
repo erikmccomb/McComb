@@ -11,15 +11,15 @@ class Mccomb extends React.Component {
     return (
       <Flexbox  flexDirection='column'>
         
-        <div>
+        <div style={styles.nameStyle}>
           <Name/>
         </div>
 
-        <div className="fadeRest">
+        <div>
           <About/>
         </div>
 
-        <div className="fadeRest">
+        <div>
           <Resume/>
         </div>
 
@@ -30,6 +30,15 @@ class Mccomb extends React.Component {
       </Flexbox>
     )
   }
+}
+
+const styles= {
+  nameStyle: {
+    width: '100vw',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '27vh 0vh 27vh 0vh'
+  },
 }
 
 export default Mccomb;
