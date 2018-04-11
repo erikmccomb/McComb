@@ -36,6 +36,7 @@ const styles = {
   },
   rowBox: {
     width: '50vw',
+    minWidth: '300px',
     alignItems: 'center',
     justifyContent: 'center' 
   },
