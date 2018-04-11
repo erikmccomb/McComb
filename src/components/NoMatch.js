@@ -7,7 +7,7 @@ class NoMatch extends Component {
   render () {
     return (
       <div style={styles.flexContainer}>
-        <Link style={{color: 'white'}} to='/'>
+        <Link style={{color: 'white'}} to='/McComb'>
           <div style={styles.box}>
             <div style={styles.text}>
               <h1>404</h1>
