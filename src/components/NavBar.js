@@ -67,44 +67,25 @@ class NavBar extends React.Component {
 }
 
 const styles = {
-  menuButton: {
-    color: '#131515',
-  },
   menuStyle: {
+    width: '100vw',
+    alignItems: 'center',
+    justifyContent: 'center',
     fontFamily: 'FuturaPTBook',
-    fontSize: '16px',  
-    flexDirection: 'row', 
-    alignItems: 'center', 
-    margin: '0',
-    padding: '0',
+    fontSize: '16px', 
     backgroundColor: '#7de2d1',
     borderRadius: '0px',
     borderBottom: '1px solid #131515',
-    justifyContent: 'center',
-    minHeight: '4.5vh',
-    width: '100vw',
   },
-  buttonRow: {
-    display: 'flex', 
-    flexDirection: 'row', 
-    alignItems: 'center', 
-    margin: '0',
-    padding: '0',
-    backgroundColor: '#7de2d1',
-    borderRadius: '0px',
-    borderTop: '1px solid #131515',
-    justifyContent: 'center',  
-  },
-  buttonBox:{
-    display: 'flex', 
-    flexDirection: 'row', 
-    alignItems: 'center',
-    justifyContent: 'center',
+  menuButton: {
+    padding: '0px',
+    paddingLeft: '2vw',
+    paddingRight: '2vw',
   },
   button: {
-    display: 'flex', 
-    alignItems: 'center',
-    justifyContent: 'center',
+    padding: '0px',
+    paddingLeft: '2vw',
+    paddingRight: '2vw',
   },
   icon: {
     color: '#131515'

@@ -162,13 +162,13 @@ class Resume extends React.Component {
         </Flexbox>
 
         <Flexbox flexDirection='row'>
-          <Flexbox flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '25vw', overflow: 'hidden', margin: '5px', minWidth: '150px'}}>
+          <Flexbox flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '25vw', overflow: 'hidden', margin: '5px', minWidth: '180px'}}>
             <table style={{ fontSize: '16px', paddingTop: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
               <tr>
                 <td style={styles.jobTitle}> University of Utah</td>
               </tr>
-              <tr>Computer Science ( Bachelors, in-progress )</tr>
-              <tr>Pro-ed Certification ( Computer Science, Completed )</tr>
+              <tr>Computer Science (Bachelors, in-progress)</tr>
+              <tr>Pro-ed Certification (Computer Science, Completed)</tr>
             </table>
 
             <table>
@@ -201,13 +201,13 @@ class Resume extends React.Component {
             </table>
           </Flexbox>
 
-          <Flexbox  flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '25vw', overflow: 'hidden',  margin: '5px', minWidth: '150px'}}>
+          <Flexbox  flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '25vw', overflow: 'hidden',  margin: '5px', minWidth: '180px'}}>
             <table style={{ fontSize: '16px', paddingTop: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
               <tr>
                 <td style={styles.jobTitle}> Jordan Applied Technology Center</td>
               </tr>
-              <tr>Web Design Certification ( Completed )</tr>
-              <tr>Graphic Design Introduction ( Completed )</tr>
+              <tr>Web Design Certification (Completed)</tr>
+              <tr>Graphic Design Introduction (Completed)</tr>
             </table>
 
             <table>

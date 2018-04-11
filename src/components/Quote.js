@@ -51,8 +51,8 @@ const styles = {
     fontFamily: 'Verdana', 
     color: '#131515',
     paddingBottom: '5px', 
-    fontSize: '30px', 
-    lineHeight: '30px',
+    fontSize: '23px', 
+    lineHeight: '23px',
   },
 }
 

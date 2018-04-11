@@ -94,7 +94,8 @@ const styles = {
     backgroundColor: '#2b2c28', 
     color: '#fffafb', 
     alignItems: 'center', 
-    justifyContent: 'center', 
+    justifyContent: 'center',
+    minWidth: '360px', 
     maxWidth: '1000px'
   }
 }
