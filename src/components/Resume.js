@@ -56,7 +56,7 @@ class Resume extends React.Component {
         <Flexbox flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '35vw', overflow: 'hidden', minWidth: '300px'}}>
           <table style={{fontSize: '16px', paddingTop: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
             <tr>
-              <td style={styles.jobTitle}>Atlas Consilio</td>
+              <td style={styles.jobTitle}>Atlas Design</td>
               <td style={{textAlign: 'right'}}>August 2017 - Present</td>
             </tr>
             <tr>Developer</tr>
