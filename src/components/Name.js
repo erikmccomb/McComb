@@ -57,7 +57,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'space-between',
     overflow: 'hidden',
-    minWidth: '43vw',
+    minWidth: '50vw',
     maxWidth: '55vw',
     fontFamily: 'Calendas_Plus',
     fontSize: 'calc(10px + 1vw)',
