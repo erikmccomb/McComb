@@ -36,7 +36,7 @@ const styles = {
   },
   rowBox: {
     width: '50vw',
-    minWidth: '300px',
+    minWidth: '400px',
     alignItems: 'center',
     justifyContent: 'center' 
   },
@@ -51,8 +51,8 @@ const styles = {
     fontFamily: 'Verdana', 
     color: '#131515',
     paddingBottom: '5px', 
-    fontSize: 'calc(5px + 1vw)', 
-    lineHeight: 'calc(10px + 1vw)',
+    fontSize: '30px', 
+    lineHeight: '30px',
   },
 }
 

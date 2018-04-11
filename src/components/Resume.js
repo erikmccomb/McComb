@@ -264,13 +264,15 @@ const styles = {
     alignItems: 'center',
   },
   skillsTable: {
-    fontFamily: 'FuturaPTBook', 
+    fontFamily: 'FuturaPTLightOblique',
     textAlign: 'center',
     fontSize: '20px',
     fontWeight: '100',
     paddingTop: '15px',
     paddingBottom: '15px',
     width: '40vw',
+    minWidth: '400px',
+    fontSize: '17px',
   },
   sectionTitle: {
     fontFamily: 'FuturaPTBook',
