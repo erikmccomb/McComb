@@ -1,7 +1,7 @@
 // Required by React
   import React from 'react';
 // Pre-styled Components
-  import { Dropdown, Menu } from 'semantic-ui-react';
+  import { Dropdown, Menu, Icon } from 'semantic-ui-react';
   import { Link } from 'react-router-dom';
   import 'semantic-ui-css/semantic.min.css';
 
@@ -37,36 +37,29 @@ class NavBar extends React.Component {
         </Link>
 
         <Menu.Menu position='right' style={styles.menuButton}>
-          <Dropdown item text='+ More' style={styles.menuButton}>
-            <Dropdown.Menu style={{    
-              fontFamily: 'FuturaPTLightOblique',
-              fontSize: '16px',
-              flexDirection: 'row', 
-              alignItems: 'center', 
-              margin: '0',
-              padding: '0',
-              backgroundColor: '#7de2d1',
-              borderBottom: '1px solid #131515',
-              justifyContent: 'center',
-            }}>
-              <Dropdown.Item>
-                <Link to='/Resume'>
-                  <div style={styles.menuButton}> 
-                    Resume
-                  </div>
-                </Link>
-              </Dropdown.Item>
+          <Menu.Item style={styles.button} name='Github' >
+            <a href="http://github.com/erikmccomb" target="_blank" rel="noopener noreferrer" >
+              <Icon name='github' size='large' style={styles.icon} />
+            </a>
+          </Menu.Item>
 
-              <Dropdown.Item>
-                <Link to='/Contact'>
-                  <div style={styles.menuButton}>
-                    Contact Me!
-                  </div>
-                </Link>
-              </Dropdown.Item>
-              
-            </Dropdown.Menu>
-          </Dropdown>
+          <Menu.Item style={styles.button} name='Linkedin' >
+            <a href="https://www.linkedin.com/in/erikmccomb/" target="_blank" rel="noopener noreferrer">
+              <Icon name='linkedin' size='large' style={styles.icon} />
+            </a>
+          </Menu.Item>
+
+          <Menu.Item style={styles.button} name='Twitter' >
+            <a href="https://twitter.com/Erik_the_Mick" target="_blank" rel="noopener noreferrer">
+              <Icon name='twitter' size='large' style={styles.icon} />
+            </a>
+          </Menu.Item>
+
+          <Menu.Item style={styles.button} name='Instagram'>
+            <a href="http://www.instagram.com/itserikwith_a_k/" target="_blank" rel="noopener noreferrer">
+              <Icon name='instagram' size='large' style={styles.icon} />
+            </a>
+          </Menu.Item>
         </Menu.Menu>
       </Menu>
     )
@@ -78,8 +71,8 @@ const styles = {
     color: '#131515',
   },
   menuStyle: {
-    fontFamily: 'FuturaPTLightOblique',
-    fontSize: '16px',
+    fontFamily: 'FuturaPTBook',
+    fontSize: '16px',  
     flexDirection: 'row', 
     alignItems: 'center', 
     margin: '0',
@@ -88,8 +81,33 @@ const styles = {
     borderRadius: '0px',
     borderBottom: '1px solid #131515',
     justifyContent: 'center',
+    minHeight: '4.5vh',
     width: '100vw',
-    minHeight: '4.5vh'
+  },
+  buttonRow: {
+    display: 'flex', 
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    margin: '0',
+    padding: '0',
+    backgroundColor: '#7de2d1',
+    borderRadius: '0px',
+    borderTop: '1px solid #131515',
+    justifyContent: 'center',  
+  },
+  buttonBox:{
+    display: 'flex', 
+    flexDirection: 'row', 
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  button: {
+    display: 'flex', 
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  icon: {
+    color: '#131515'
   }
 }
 

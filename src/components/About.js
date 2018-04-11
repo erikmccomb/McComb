@@ -28,15 +28,15 @@ const About = () => {
           <Flexbox flexDirection='row' style={styles.paragraphBox}>
             <Flexbox flexDirection='column' style={{margin:'15px 7.5px 15px 15px'}}>
 
-              <Flexbox flexDirection='column' style={{marginBottom: '15px', textAlign: 'justify', fontSize: '16px', maxWidth: '600px'}}>
+              <Flexbox flexDirection='column' style={{marginBottom: '30px', textAlign: 'justify', fontSize: '18px', maxWidth: '600px', fontFamily: 'FuturaPTLightOblique',}}>
                 <p>
-                  I am a web designer & developer based in Salt Lake City, Utah. I'm experienced in the latest technologies, so I know how to build your site to run on any device you need to reach your audience. Responsive Design, ReactJS, HTML, CSS - I am a Front end developer looking to expand on what I know, and further grow as a developer.
+                  I am a web designer & developer based in Salt Lake City, Utah. I'm experienced in the latest technologies, so I know how to build your site to run on any device needed to reach your audience. React JS, React Native, Javascript, HTML, CSS - I am a Front end developer looking to expand on what I know, and further grow as a developer.
                 </p>
                 <p>
-                  My passion is UI/UX design and implementation. Improving overall customer experience by making it easier and more intuitive to use your site - That is my favorite job.
+                  My passion is UI/UX design and implementation. Improving overall customer experience by making it easier and more intuitive to use your site - That is my favorite task.
                 </p>
                 <p>
-                  Here you will find my resume, a few links to social media, my blog, and some fun interactive projects. Click around, have some fun. Thanks for stopping by!
+                  Click around, have some fun. Thanks for stopping by!
                 </p>
               </Flexbox>
 
@@ -46,7 +46,7 @@ const About = () => {
 
             </Flexbox>
             <div style={{maxWidth: '400px', padding: '10px'}}>
-              <Image src={me} size='huge'/>
+              <Image src={me} size='large'/>
             </div>
           </Flexbox>
         </Flexbox>

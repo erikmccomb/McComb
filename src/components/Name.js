@@ -30,7 +30,7 @@ const Name = () => {
       </Flexbox>
     </Flexbox>
   )
-}
+} 
 
 const styles = {
   titleBox: {

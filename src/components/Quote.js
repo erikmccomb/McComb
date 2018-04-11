@@ -32,6 +32,7 @@ const styles = {
     backgroundColor: '#fffafb',
     height: 'auto',
     justifyContent: 'center',
+    paddingTop: '30px',
   },
   rowBox: {
     width: '50vw',
@@ -43,7 +44,7 @@ const styles = {
   },
   nameContainer: {
     color: '#339989', 
-    padding: '40px'
+    padding: '50px',
   },
   hello: {
     fontFamily: 'Verdana', 

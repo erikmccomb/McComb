@@ -53,8 +53,8 @@ class Resume extends React.Component {
           </div>
         </Flexbox>
 
-        <Flexbox flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '35vw', overflow: 'hidden'}}>
-        <table style={{fontSize: '16px', paddingTop: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
+        <Flexbox flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '35vw', overflow: 'hidden', minWidth: '300px'}}>
+          <table style={{fontSize: '16px', paddingTop: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
             <tr>
               <td style={styles.jobTitle}>Atlas Consilio</td>
               <td style={{textAlign: 'right'}}>August 2017 - Present</td>
@@ -83,8 +83,8 @@ class Resume extends React.Component {
           </table>
         </Flexbox>
 
-        <Flexbox flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '35vw', overflow: 'hidden'}}>
-        <table style={{ fontSize: '16px', paddingTop: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
+        <Flexbox flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '35vw', overflow: 'hidden', minWidth: '300px'}}>
+          <table style={{ fontSize: '16px', paddingTop: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
             <tr>
               <td style={styles.jobTitle}> Slope App Studio </td>
               <td style={{textAlign: 'right'}}>October 2017 - January 2018</td>
@@ -120,7 +120,7 @@ class Resume extends React.Component {
           </table>
         </Flexbox>
 
-        <Flexbox flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '35vw', overflow: 'hidden'}}>
+        <Flexbox flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '35vw', overflow: 'hidden', minWidth: '300px'}}>
           <table style={{ fontSize: '16px', paddingTop: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
             <tr>
               <td style={styles.jobTitle}> Dev Point Studio</td>
@@ -153,6 +153,87 @@ class Resume extends React.Component {
               </td>
             </tr>
           </table>
+        </Flexbox>
+
+        <Flexbox flexDirection='column' style={styles.sectionBox}>
+          <div style={styles.sectionTitle}>
+            Education
+          </div>
+        </Flexbox>
+
+        <Flexbox flexDirection='row'>
+          <Flexbox flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '25vw', overflow: 'hidden', margin: '5px', minWidth: '150px'}}>
+            <table style={{ fontSize: '16px', paddingTop: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
+              <tr>
+                <td style={styles.jobTitle}> University of Utah</td>
+              </tr>
+              <tr>Computer Science ( Bachelors, in-progress )</tr>
+              <tr>Pro-ed Certification ( Computer Science, Completed )</tr>
+            </table>
+
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>
+                      Android & iOS app development in React Native
+                    </li>
+                  
+                    <li>
+                      React / Redux / React Router / Redux / JavaScript
+                    </li>
+                  
+                    <li>
+                      Bootstrap / Materalize / Semantic UI
+                    </li>
+                    
+                    <li>
+                      Ruby / Ruby Gems / Ruby on Rails / MVC
+                    </li>
+
+                    <li>
+                      Package Managers - NPM, Yarn
+                    </li>
+                    
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </Flexbox>
+
+          <Flexbox  flexDirection='column' style={{marginTop: '7px', marginBottom: '7px', backgroundColor: 'rgb(255, 250, 251, 0.3)', width: '25vw', overflow: 'hidden',  margin: '5px', minWidth: '150px'}}>
+            <table style={{ fontSize: '16px', paddingTop: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
+              <tr>
+                <td style={styles.jobTitle}> Jordan Applied Technology Center</td>
+              </tr>
+              <tr>Web Design Certification ( Completed )</tr>
+              <tr>Graphic Design Introduction ( Completed )</tr>
+            </table>
+
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>
+                      Web Design Certification 
+                    </li>
+                    <li>
+                      Graphic Design Certification
+                    </li>
+                    <li>
+                      Computer programming introduction
+                    </li>
+                    <li>
+                      HTML, CSS, Javascript, Flash, Java 
+                    </li>
+                    <li>
+                      President of JATC Student Council
+                    </li>
+                 </ul>
+                </td>
+              </tr>
+            </table>
+          </Flexbox>
         </Flexbox>
         
       </Flexbox>
