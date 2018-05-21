@@ -14,9 +14,9 @@ import NoMatch from './NoMatch';
 import Splash from './Splash';
 
 
-const PageLayoutRoute = ({ component: Component }) => {
+const PageLayoutRoute = ({ component: Component, ...rest }) => {
   return (
-    <Route render={matchProps => (
+    <Route {...rest} render={matchProps => (
       <PageLayout >
         <Component {...matchProps} />
       </PageLayout>
@@ -24,9 +24,9 @@ const PageLayoutRoute = ({ component: Component }) => {
   )
 }
 
-const SplashLayoutRoute = ({ component: Component }) => {
+const SplashLayoutRoute = ({ component: Component, ...rest }) => {
   return (
-    <Route render={matchProps => (
+    <Route {...rest} render={matchProps => (
       <SplashLayout>
         <Component {...matchProps} />
       </SplashLayout>
