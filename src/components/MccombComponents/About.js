@@ -14,7 +14,7 @@ const About = () => {
           <Flexbox flexDirection='column' style={styles.nameContainer}>
             <Flexbox>
               <h3 style={styles.hello}>
-                Hello,  I'm Erik buttmcface
+                Hello,  I'm Erik McComb
               </h3>
             </Flexbox>
             <Flexbox>
