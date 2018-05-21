@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/App.css';
 import Flexbox from 'flexbox-react';
-import { Button, Card, Image, Icon } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
 import pp from '../images/pp.jpg'
 import prs from '../images/prs.jpg'
 import blog from '../images/blog.jpg'

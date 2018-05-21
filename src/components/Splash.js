@@ -12,7 +12,7 @@ class Mccomb extends React.Component {
           <Name/>
           <div>
             <Link to='/McComb'>
-              <Flexbox style={{fontFamily: 'FuturaPTBook', fontSize: '30px', color: 'white', alignItems: 'center', justifyContent: 'center', padding: '30px', fontFamily: 'FuturaPTLightOblique',}}>
+              <Flexbox style={{fontSize: '30px', color: 'white', alignItems: 'center', justifyContent: 'center', padding: '30px', fontFamily: 'FuturaPTLightOblique',}}>
                 Enter
               </Flexbox>
             </Link>

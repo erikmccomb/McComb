@@ -1,7 +1,7 @@
 // Required by React
   import React from 'react';
 // Pre-styled Components
-  import { Dropdown, Menu, Icon } from 'semantic-ui-react';
+  import { Menu, Icon } from 'semantic-ui-react';
   import { Link } from 'react-router-dom';
   import 'semantic-ui-css/semantic.min.css';
 

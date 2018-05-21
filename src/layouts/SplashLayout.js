@@ -1,6 +1,5 @@
 // Required by React
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import splash from '../images/arch_splash.jpg';
 import Flexbox from 'flexbox-react';
 import '../css/App.css';
