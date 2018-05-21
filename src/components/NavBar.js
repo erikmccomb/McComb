@@ -27,14 +27,12 @@ class NavBar extends React.Component {
           </Menu.Item>
         </Link>
 
-        <Link to='/Blog'>
-          <Menu.Item 
-            name='Blog' 
-            style={styles.menuButton}
-          >
-            Blog
-          </Menu.Item>
-        </Link>
+        
+        <Menu.Item name='Blog' style={styles.menuButton}>
+        <a href="https://erikmccombblog.netlify.com/" target="_blank" rel="noopener noreferrer" style={{color:'black'}}>
+          Blog
+        </a>
+        </Menu.Item>
 
         <Menu.Menu position='right' style={styles.menuButton}>
           <Menu.Item style={styles.button} name='Github' >
