@@ -1,30 +1,14 @@
-// Required by React
-  import React from 'react';
-  import ReactDOM from 'react-dom';
-  import registerServiceWorker from './registerServiceWorker';
-// Styling covering the entire app
-  import {injectGlobal} from 'styled-components';
-  import './index.css';
-// Components
-  import App from './components/App';
+import React from 'react'
+import { render } from 'react-dom'
+import { HashRouter } from 'react-router-dom'
+import 'semantic-ui-css/semantic.min.css'
+import App from './components/App'
 
-injectGlobal `
-  body{
-    min-height: 100%;
-    margin:0px;
-    padding: 0px;
-    background-color: #131515;
-    color: #fefcfb;
-  },
-`
+render((
 
-const Root = () => {
-  return (
-    <div style={{height: '100vh'}}>
-      <App />
-    </div>
-  )
-}
-
-ReactDOM.render(<Root />, document.getElementById('root'));
-registerServiceWorker();
+  // HashRouter used - Static Site
+  <HashRouter>
+    <App />
+  </HashRouter>
+  
+), document.getElementById('root'))

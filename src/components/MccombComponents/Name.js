@@ -1,6 +1,6 @@
-import React from 'react';
-import '../../css/App.css';
-import Flexbox from 'flexbox-react';
+import React from 'react'
+import '../../css/App.css'
+import Flexbox from 'flexbox-react'
 
 const Name = () => {
   return (
