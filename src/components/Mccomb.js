@@ -3,32 +3,38 @@ import Flexbox from 'flexbox-react'
 import Name from './MccombComponents/Name'
 import About from './MccombComponents/About'
 import Resume from './MccombComponents/Resume'
-import Quote from './MccombComponents/Quote'
+
 
 class Mccomb extends React.Component {
   render(){
     return (
-      <Flexbox  flexDirection='column'>
-        
-        <div>
+      <Flexbox 
+        flexDirection='column' 
+        justifyContent='center' 
+        width='100vw' 
+        maxWidth='100vw'
+      >
+        <Flexbox style={styles.ComponentStyle}>
           <Name/>
-        </div>
+        </Flexbox>
 
-        <div>
+        <Flexbox style={styles.ComponentStyle}>
           <About/>
-        </div>
+        </Flexbox>
 
-        <div>
+        <Flexbox style={styles.ComponentStyle}>
           <Resume/>
-        </div>
-
-        <div>
-          <Quote/>
-        </div>
-
+        </Flexbox>
       </Flexbox>
     )
   }
 }
 
+const styles={
+  ComponentStyle: {
+    justifyContent: 'center', 
+    width: '100vw',
+    maxWidth: '100vw',
+  }
+}
 export default Mccomb

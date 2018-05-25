@@ -4,28 +4,55 @@ import Flexbox from 'flexbox-react'
 
 const Name = () => {
   return (
-    <Flexbox flexDirection='column' style={styles.titleBox}>
-      <Flexbox  style={styles.nameContainer}>
-        <div style={styles.titleName}> 
-          McComb
-        </div>
-      </Flexbox>
+    <Flexbox 
+      flexDirection='column' 
+      alignItems='center'
+      justifyContent='center'
+      width='100vw'
+      maxWidth='100vw'
+      style={{backgroundColor:'#131515',}}
+      padding='25vh 0px 25vh 0px'
+    >
+      <Flexbox flexDirection='column' maxWidth='800px'>
+        <Flexbox 
+          padding='0vw 3vw 0vw 3vw' 
+          style={styles.nameContainer}
+        >
+          <div style={styles.titleName}> 
+            McComb
+          </div>
+        </Flexbox>
 
-      <Flexbox flexDirection='row' style={styles.subRow}>
-        <Flexbox style={styles.sub}>
-          <div style={{paddingRight: '4vw'}}>
-            Graphic Design
-          </div>
-        </Flexbox>
-        <Flexbox style={styles.sub}>
-          <div >
-            Web Design & Developer
-          </div>
-        </Flexbox>
-        <Flexbox style={styles.sub}>
-          <div style={{paddingLeft: '4vw'}}>
-            QA Engineer
-          </div>
+        <Flexbox 
+          flexDirection='row'
+          alignItems='center'
+          justifyContent='space-between'
+          style={styles.subRow}
+        >
+          <Flexbox 
+            alignItems='center'
+            justifyContent='center'
+          >
+            <div style={{paddingRight: '4vw'}}>
+              Graphic Design
+            </div>
+          </Flexbox>
+          <Flexbox 
+            alignItems='center'
+            justifyContent='center'
+          >
+            <div >
+              Web Design & Developer
+            </div>
+          </Flexbox>
+          <Flexbox 
+            alignItems='center'
+            justifyContent='center'
+          >
+            <div style={{paddingLeft: '4vw'}}>
+              QA Engineer
+            </div>
+          </Flexbox>
         </Flexbox>
       </Flexbox>
     </Flexbox>
@@ -33,37 +60,24 @@ const Name = () => {
 } 
 
 const styles = {
-  titleBox: {
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
   titleName: {
     fontFamily: 'FuturaPTBook',
     fontSize: 'calc(30px + 10vw)',
     lineHeight: 'calc(30px + 10vw)',
     color: '#7de2d1',
-    padding: '0vw 3vw 0vw 3vw'
   },
   nameContainer: {
     padding: '0vw 3vw 0vw 3vw',
     alignItems: 'center',
     justifyContent: 'center'
   },
-  sub: {
-    alignItems: 'center', 
-    justifyContent: 'center'
-  },
   subRow: {
-    alignItems: 'center',
-    justifyContent: 'space-between',
     overflow: 'hidden',
     fontFamily: 'Calendas_Plus',
-    fontSize: 'calc(10px + 1vw)',
-    lineHeight: 'calc(10px + 1vw)',
+    fontSize: 'calc(10px + .8vw)',
+    lineHeight: 'calc(10px + .8vw)',
     color: '#339989',
-    paddingTop: '10px',
-    paddingLeft: '2vw',
-    paddingRight: '2vw',
+    padding: '10px 2vw 0px 2vw',
     borderTop: '2px solid #339989'
   },
 }
