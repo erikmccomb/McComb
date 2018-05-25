@@ -1,5 +1,4 @@
 import React from 'react'
-import NavBar from './NavBar'
 import Main from './Main'
 import Flexbox from 'flexbox-react'
 import '../css/App.css'
@@ -19,7 +18,7 @@ class App extends React.Component {
         minHeight='100vh' 
         maxWidth='100vw'
       >
-        <Sidebar.Pushable as={Segment} style={{backgroundColor:'#131515'}}>
+        <Sidebar.Pushable as={Segment} style={{backgroundColor:'#131515', borderRadius: '0px'}}>
           <Sidebar
             as={Menu}
             animation='slide along'
@@ -30,17 +29,17 @@ class App extends React.Component {
             vertical
             inverted
             borderless
-            style={{backgroundColor: '#339989', minHeight:'100vh',}}
+            style={{backgroundColor: '#339989', minHeight:'100vh', }}
           >
             <Menu.Item name='home'>
-              <Link to='/' style={{color:'#131515'}}>
+              <Link to='/' style={{color:'#131515'}} onClick={this.toggleVisibility}>
                 <Icon name='home' size='big'/>
                 <br/>
                 McComb
               </Link>
             </Menu.Item>
             <Menu.Item name='gamepad'>
-              <Link to='/Portfolio' style={{color:'#131515'}}>
+              <Link to='/Portfolio' style={{color:'#131515'}} onClick={this.toggleVisibility}>
                 <Icon name='file code outline' size='big'/>
                 <br/>
                 Portfolio
@@ -51,7 +50,8 @@ class App extends React.Component {
               <Menu.Item name='Github' >
                 <a href="http://github.com/erikmccomb" 
                   target="_blank" 
-                  rel="noopener noreferrer" 
+                  rel="noopener noreferrer"
+                  onClick={this.toggleVisibility}
                 >
                   <Icon name='github' size='big' style={{color:'#131515'}} />
                 </a>
@@ -61,17 +61,9 @@ class App extends React.Component {
                 <a href="https://www.linkedin.com/in/erikmccomb/" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  onClick={this.toggleVisibility}
                 >
                   <Icon name='linkedin' size='big' style={{color:'#131515'}} />
-                </a>
-              </Menu.Item>
-
-              <Menu.Item name='Twitter' >
-                <a href="https://twitter.com/Erik_the_Mick" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <Icon name='twitter' size='big' style={{color:'#131515'}} />
                 </a>
               </Menu.Item>
 
@@ -79,6 +71,7 @@ class App extends React.Component {
                 <a href="http://www.instagram.com/itserikwith_a_k/" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  onClick={this.toggleVisibility}
                 >
                   <Icon name='instagram' size='big' style={{color:'#131515'}} />
                 </a>

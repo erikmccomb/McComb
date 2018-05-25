@@ -8,10 +8,10 @@ import blog from '../images/blog.jpg'
 class Portfolio extends React.Component {
   render(){
     return (
-      <div>
-        <div>
+      <Flexbox flexDirection='column' width='100vw' height='100vh' alignItems='center' justifyContent='center'>
+        <Flexbox alignItems='center' justifyContent='center' padding='20px' style={{ fontSize: '50px', lineHeight:'50px', fontFamily: 'FuturaPTBook', color: '#7de2d1',}}>
           Portfolio
-        </div>      
+        </Flexbox>      
                 
         <Card.Group centered>
           <Card>
@@ -24,7 +24,7 @@ class Portfolio extends React.Component {
               </Card.Header>
               <Card.Meta>
                 <span className='date'>
-                  Game made with Javascript, HTML, and CSS
+                  Simple Game made with Javascript
                 </span>
               </Card.Meta>
             </Card.Content>
@@ -63,7 +63,7 @@ class Portfolio extends React.Component {
           </Card>
 
         </Card.Group>
-      </div>
+      </Flexbox>
     )
   }
 }

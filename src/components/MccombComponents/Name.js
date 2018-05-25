@@ -62,9 +62,9 @@ const Name = () => {
 const styles = {
   titleName: {
     fontFamily: 'FuturaPTBook',
+    color: '#7de2d1',
     fontSize: 'calc(30px + 10vw)',
     lineHeight: 'calc(30px + 10vw)',
-    color: '#7de2d1',
   },
   nameContainer: {
     padding: '0vw 3vw 0vw 3vw',
