@@ -15,7 +15,7 @@ class App extends React.Component {
     return (
       <Flexbox 
         flexDirection='column' 
-        minHeight='100vh' 
+        maxHeight='100vh'
         maxWidth='100vw'
       >
         <Sidebar.Pushable as={Segment} style={{backgroundColor:'#131515', borderRadius: '0px'}}>
@@ -81,7 +81,7 @@ class App extends React.Component {
 
           <Sidebar.Pusher>
             <Icon link size='big' name='content' onClick={this.toggleVisibility} style={{padding:'10px', color: '#7de2d1'}} />
-            <Flexbox  style={{minHeight:'100vh', overFlowY: 'scroll'}}>
+            <Flexbox  style={{minHeight:'97vh', overFlowY: 'scroll'}}>
               <Main/>
             </Flexbox>
           </Sidebar.Pusher>
