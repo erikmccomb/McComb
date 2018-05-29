@@ -8,7 +8,7 @@ import blog from '../images/blog.jpg'
 class Portfolio extends React.Component {
   render(){
     return (
-      <Flexbox flexDirection='column' width='100vw' alignItems='center' justifyContent='center'>
+      <Flexbox flexDirection='column' width='100vw' alignItems='center' justifyContent='center' paddingBottom='30px'>
         <Flexbox alignItems='center' justifyContent='center' padding='20px' style={{ fontSize: '50px', lineHeight:'50px', fontFamily: 'FuturaPTBook', color: '#7de2d1',}}>
           Portfolio
         </Flexbox>      
